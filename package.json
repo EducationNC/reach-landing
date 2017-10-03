@@ -1,0 +1,24 @@
+{
+  "name": "reach-landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EducationNC/reach-landing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EducationNC/reach-landing/issues"
+  },
+  "homepage": "https://github.com/EducationNC/reach-landing#readme",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.1",
+    "google-sheets-node-api": "^0.3.0"
+  }
+}
