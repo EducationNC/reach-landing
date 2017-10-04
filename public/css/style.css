@@ -36,6 +36,27 @@ p {
     font-family: 'Lato', sans-serif;
     font-size: 14px;
 }
+
+.show-mobile{
+  display:none;
+}
+.hide-mobile{
+  display:inline;
+}
+@media (max-width:768px){
+  .show-mobile{
+    display:inline;
+    margin-top:30px;
+  }
+  .hide-mobile{
+    display:none;
+  }
+  #join-convo{
+    margin-top:20px;
+  }
+
+}
+
 /*---------------------------------------
    COMMON STYLES
 -----------------------------------------*/
@@ -147,8 +168,17 @@ p {
     background-size: cover;
 	background-repeat: no-repeat;
 }
+@media (max-width: 768px){
+  .header{
+    background-image:none;
+    background-color:#731454;
+  }
+  .subscribe .section_overlay{
+    padding-bottom:0!important;
+  }
+}
 .header .section_overlay {
-    background-color: rgba(33, 33, 33, .75);
+    background-color: rgba(33, 33, 33, .45);
 }
 .logo{
     /*padding-bottom: 50px;*/
@@ -178,7 +208,6 @@ p {
     font-size: 38px;
     font-weight: 300;
     line-height: 48px;
-    padding-top: 30px
 }
 .home_text p {
     color: #fff;
