@@ -1005,6 +1005,12 @@ div.carousel-inner .item img {
    SECTION FOOTER
 -----------------------------------------*/
 
+@media (max-width:767px){
+  #black-box{
+  height:25vh;
+  }
+}
+
 .copyright {
     background-color: #1A1D22;
     padding-bottom: 65px;
