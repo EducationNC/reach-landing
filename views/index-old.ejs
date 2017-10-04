@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reach NC Voices by EducationNC</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300i,400,400i,700,900" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Owl Carousel Assets -->
+    <!-- <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet"> -->
+
+
+    <!-- Pixeden Icon Font -->
+    <link rel="stylesheet" href="css/Pe-icon-7-stroke.css">
+
+    <!-- Font Awesome -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+
+    <!-- PrettyPhoto -->
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+    <!-- Style -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <!-- Responsive CSS -->
+    <link href="css/responsive.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+      <script src="js/jquery.min.js"></script>
+  <script>
+
+  </script>
+</head>
+
+<body>
+    <!-- PRELOADER -->
+    <div class="spn_hol">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+
+ <!-- END PRELOADER -->
+
+    <section class="header parallax home-parallax page" id="HOME">
+        <h2></h2>
+        <div class="section_overlay">
+
+
+            <div class="container home-container">
+                <div class="row">
+                    <div class="col-md-12" style="top:-20px;">
+                        <div class="logo text-center">
+                                <!-- LOGO -->
+                            <img class="hide-mobile" width="40%" height="100%" src="images/logo.png" alt="" >
+                            <img class="show-mobile" width="70%" height="100%" src="images/logo-white.png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 col-sm-8">
+                        <div class="home_text">
+                            <!-- TITLE AND DESC -->
+
+                            <div class="col-md-8 col-sm-12" style="padding-left:0;">
+                              <h1>Our 21st Century Town Hall</h1>
+                              <p>Reach connects people 🙋🏽 and policy 📄. It is a technology platform 📱, a strategy 📈, and a goal 🥅. We meet people where they are to better understand them 👩🏽‍🏫, their communities 🏘, their hopes 🙏🏽, and their dreams 💭.</p>
+                            </div>
+                            <div class="download-btn">
+                            <!-- BUTTON -->
+                                <a class="btn home-btn wow fadeInLeft hide-mobile" href="ReachNCVoices.pdf" download>Download our report</a>
+                                <a class="btn home-btn wow fadeInLeft show-mobile" href="ReachNCVoices.pdf" target="_blank">View our report</a>
+                                <p class="tuor btn wow fadeInRight" id="join-convo">Join the conversation<i class="fa fa-angle-down"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-md-3 col-md-offset-1 col-sm-4">
+                        <div class="home-iphone">
+                            <img src="images/iPhone_Home.png" alt="">
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- END HEADER SECTION -->
+
+
+
+    <section class="subscribe parallax subscribe-parallax" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20">
+        <div class="section_overlay wow lightSpeedIn">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+
+                        <!-- Start Subscribe Section Title -->
+                        <div class="section_title">
+                            <h2>JOIN THE CONVERSATION</h2>
+                            <p>Sign up to join the Reach NC Voices community.</p>
+                        </div>
+                        <!-- End Subscribe Section Title -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row  wow lightSpeedIn">
+                    <div class="col-md-6 col-md-offset-3">
+                        <!-- SUBSCRIPTION SUCCESSFUL OR ERROR MESSAGES -->
+                        <div class="subscription-success"></div>
+                        <div class="subscription-error"></div>
+                        <form id="input-form" class="subscribe_form" method="POST" target="no-target">
+                            <div class="form-group">
+                                <!-- <input type="email" autocapitalize="off" autocorrect="off" class="email form-control" id="inp-email" placeholder="Enter Email Address" value="" > -->
+
+                              <input id="input-email" placeholder="Enter Email Address" name="email" class="form-control email">
+                              <button id="submit-btn" type="submit" class="btn btn-default subs-btn" style="margin-top:20px;">SUBMIT</button>
+                            </form>
+                          </div>
+
+                            <iframe src="#" id="no-target" name="no-target" style="visibility:hidden"></iframe>
+
+                            <script>
+                                $('#input-form').one('submit',function(){
+                                    var inputName = encodeURIComponent($('#input-email').val());
+                                    var baseURL = 'https://docs.google.com/forms/d/e/1FAIpQLSf1Bmv4KFhPt2oWRuTFHY5UJR3D_ZHI2cB9RaZ-vTRc22pk-A/formResponse?entry.1502069114=';
+                                    var submitRef = '&submit=Submit';
+                                    var submitURL = (baseURL + inputName + submitRef);
+                                    console.log(submitURL);
+                                    $(this)[0].action=submitURL;
+                                    $('#input-email').addClass('active').val('Thank You!');
+                                });
+                            </script>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- END SUBSCRIPBE FORM -->
+
+
+<!-- =========================
+     FOOTER
+============================== -->
+
+    <section class="copyright">
+        <h2></h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="copy_right_text">
+                    <!-- COPYRIGHT TEXT -->
+                        <p>Contact lcarbonell@ednc.org with questions.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- END FOOTER -->
+
+
+<!-- =========================
+     SCRIPTS
+============================== -->
+
+
+
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/smoothscroll.js"></script>
+    <script src="js/jquery.parallax-1.1.3.js"></script>
+    <script src="js/wow.min.js"></script> -->
+    <script src="js/script.js"></script>
+
+    <!-- <script src="js/owl.carousel.js"></script> -->
+    <!-- <script src="js/jquery.fitvids.js"></script> -->
+
+    <!-- <script src="js/jquery.prettyPhoto.js"></script> -->
+
+    <!-- <script src="js/waypoints.min.js"></script> -->
+    <!-- <script src="js/jquery.counterup.min.js"></script> -->
+
+
+  <script>
+  $(document).ready(function(){
+    $('#submit-btn').click(function(){
+      submitted_email = $('#inp-email')[0].value;
+
+        })
+  })
+  </script>
+
+
+
+</body>
+</html>
