@@ -918,7 +918,15 @@ div.carousel-inner .item img {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
 }
+@media (max-width:767px){
+  .subscribe{
+    background-image:none;
+    background-color:black;
+  }
+}
+
 .subscribe .section_overlay {
     padding-bottom: 70px;
     background: transparent
