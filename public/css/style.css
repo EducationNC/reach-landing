@@ -32,6 +32,11 @@ body {
     overflow-y: scroll;
     overflow-x: hidden;
 }
+@media (max-width:767px){
+  body{
+    overflow-y:hidden;
+  }
+}
 p {
     font-family: 'Lato', sans-serif;
     font-size: 14px;
@@ -1005,11 +1010,11 @@ div.carousel-inner .item img {
    SECTION FOOTER
 -----------------------------------------*/
 
-@media (max-width:767px){
+/*@media (max-width:767px){
   #black-box{
   height:25vh;
   }
-}
+}*/
 
 .copyright {
     background-color: #1A1D22;
