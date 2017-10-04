@@ -1011,6 +1011,12 @@ div.carousel-inner .item img {
     padding-top: 65px;
     border-bottom: 3px solid #BC92AD;
 }
+@media (max-width:767px){
+  .copyright{
+    padding-top:15px;
+    padding-bottom:15px;
+  }
+}
 .copyright h2 {
     height: 0px;
     margin: 0px;
