@@ -191,29 +191,7 @@
     <script src="js/jquery.counterup.min.js"></script>
     <script src="js/script.js"></script>
 
-<script>
 
-mySheet.useServiceAccountAuth(creds).then(mySheet.getInfo.bind(mySheet)).then(function(sheet_info ) {
-    console.log( sheet_info.title + ' is loaded' );
-
-    var sheet1 = sheet_info.worksheets[0];
-
-    sheet1.addRow({Col1: 'Val1', Col2: 'Val2'})
-        .then(sheet1.getRows.bind(sheet1, null))
-        .then(function(rows) {
-            return [rows, rows[0].del()];
-        })
-        .spread(function(rows) {
-            console.log('Done deleteing');
-            rows[1].Col7 = 'new val2';
-            return rows[1].save();
-        })
-        .then(console.log.bind(console, 'Done saving'))
-        .catch(function(e) {
-            console.error(e);
-        });
-});
-</script>
 
 </body>
 </html>

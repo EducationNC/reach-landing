@@ -13,11 +13,11 @@ app.listen(app.get('port'), function(){
   console.log('Node app is running on port', app.get('port'));
 });
 
-var creds = require('<client key JSON file>');
-
-var GoogleSpreadsheet = require("google-sheets-node-api");
-
-var mySheet = new GoogleSpreadsheet('<spreadsheet ID>');
+// var creds = require('<client key JSON file>');
+//
+// var GoogleSpreadsheet = require("google-sheets-node-api");
+//
+// var mySheet = new GoogleSpreadsheet('<spreadsheet ID>');
 
 app.get('/', function(req, res){
   res.render('index')
