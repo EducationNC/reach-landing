@@ -1010,11 +1010,12 @@ div.carousel-inner .item img {
    SECTION FOOTER
 -----------------------------------------*/
 
-/*@media (max-width:767px){
+@media (max-width:767px){
   #black-box{
   height:25vh;
+  display:inline;
   }
-}*/
+}
 
 .copyright {
     background-color: #1A1D22;
