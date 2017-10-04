@@ -20,5 +20,5 @@ var GoogleSpreadsheet = require("google-sheets-node-api");
 var mySheet = new GoogleSpreadsheet('<spreadsheet ID>');
 
 app.get('/', function(req, res){
-  res.render('index', {'mySheet': mySheet, 'creds':creds});
+  res.render('index')
 });
