@@ -22,17 +22,18 @@ URL: http://designscrazed.org/
   13. SECTION FOOTER
 
 */
+@import url('https://fonts.googleapis.com/css?family=Lato:200,300i,400,400i,700,900');
 * {
     margin: 0;
     padding: 0;
 }
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Lato', serif;
     overflow-y: scroll;
     overflow-x: hidden;
 }
 p {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 14px;
 }
 /*---------------------------------------
@@ -57,7 +58,7 @@ p {
     bottom: -20px;
     width: 60px;
     height: 1px;
-    background-color: #f39c12;
+    background-color: #BC92AD;
     left: 50%;
     margin-left: -30px;
 }
@@ -96,10 +97,10 @@ p {
     }
     .navbar-default .navbar-nav>li>a {
         color: #B5B5B5;
-        font-family: 'Raleway', sans-serif;
+        font-family: 'Lato', sans-serif;
     }
     .navbar-default .navbar-nav>li>a:hover {
-        color: #f39c12;
+        color: #BC92AD;
     }
     .navbar-default .navbar-nav>li>a:focus {
         color: #B5B5B5;
@@ -139,7 +140,7 @@ p {
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     background: transparent;
-    color: #f39c12;
+    color: #BC92AD;
 }
 .header {
     background: url(../images/home.png);
@@ -174,15 +175,15 @@ p {
 .home_text h1 {
     color: #fff;
     text-transform: uppercase;
-    font-size: 35px;
+    font-size: 38px;
     font-weight: 300;
-    line-height: 45px;
+    line-height: 48px;
     padding-top: 30px
 }
 .home_text p {
     color: #fff;
-    font-size: 17px;
-    line-height: 28px;
+    font-size: 20px;
+    line-height: 31px;
     margin-top: 0px;
     font-weight: 300;
 }
@@ -195,8 +196,8 @@ p {
 .home-btn:active,
 .home-btn:visited {
     background: transparent;
-    border-color: #f39c12;
-    color: #f39c12;
+    border-color: #BC92AD;
+    color: #BC92AD;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 30px;
@@ -210,7 +211,7 @@ p {
     transition: all 1s;
 }
 .home-btn:hover {
-    background-color: #f39c12;
+    background-color: #BC92AD;
     color: #fff;
 }
 .tuor,
@@ -234,7 +235,7 @@ tuor:visited {
 .tuor i {
     font-size: 20px;
     padding-left: 5px;
-    color: #f39c12;
+    color: #BC92AD;
 }
 
 
@@ -267,7 +268,7 @@ tuor:visited {
     bottom: -12px;
     left: 0;
     width: 70px;
-    background: #f39c12;
+    background: #BC92AD;
     height: 1px;
 }
 .inner_about_title p {
@@ -304,7 +305,7 @@ tuor:visited {
     font-size: 15px;
 }
 .single_about_area:hover div i {
-    color: #f39c12;
+    color: #BC92AD;
 }
 .about_phone img {} @media (min-width: 991px) and (max-width: 1200px) {
     .about_phone img {
@@ -339,7 +340,7 @@ tuor:visited {
     bottom: -12px;
     left: 0;
     width: 70px;
-    background: #f39c12;
+    background: #BC92AD;
     height: 1px;
 }
 .video_title p {
@@ -365,9 +366,9 @@ tuor:visited {
     transition: all 1s;
 }
 .btn-video:hover {
-    background: #f39c12;
+    background: #BC92AD;
     color: #fff;
-    border: 1px solid #f39c12;
+    border: 1px solid #BC92AD;
 }
 .video {} .video iframe {
     width: 100%;
@@ -402,7 +403,7 @@ tuor:visited {
     bottom: -8px;
 }
 div.carousel-inner .item img {
-    border: 2px solid #f39c12;
+    border: 2px solid #BC92AD;
     border-radius: 50%;
     padding: 3px;
 }
@@ -416,14 +417,14 @@ div.carousel-inner .item img {
     padding-top: 50px;
 }
 .testimonial_caption h2 {
-    color: #f39c12;
+    color: #BC92AD;
     text-transform: uppercase;
     font-weight: 900;
     font-size: 30px;
     margin-top: 25px;
 }
 .testimonial_caption h4 {
-    color: #f39c12
+    color: #BC92AD
 }
 .testimonial_caption h4 span {
     color: #D8D8D8;
@@ -433,14 +434,14 @@ div.carousel-inner .item img {
 .testimonial ol.carousel-indicators li {
     width: 12px;
     height: 12px;
-    border: 1px solid #f39c12;
+    border: 1px solid #BC92AD;
     margin: 1PX
 }
 .testimonial ol.carousel-indicators li.active {
     width: 12px;
     height: 12px;
-    border: 0px solid #f39c12;
-    background: #f39c12;
+    border: 0px solid #BC92AD;
+    background: #BC92AD;
 }
 /*---------------------------------------
    SECTION FEATURES
@@ -465,7 +466,7 @@ div.carousel-inner .item img {
 .right_single_feature div {
     position: absolute;
     font-size: 40px;
-    color: #f39c12;
+    color: #BC92AD;
     left: 0;
     width: 90px;
     height: 90px;
@@ -480,7 +481,7 @@ div.carousel-inner .item img {
     color: #333333;
 }
 .right_single_feature h3 span {
-    color: #f39c12;
+    color: #BC92AD;
 }
 .right_single_feature p {
     color: #333;
@@ -500,7 +501,7 @@ div.carousel-inner .item img {
 .left_single_feature div {
     position: absolute;
     font-size: 40px;
-    color: #f39c12;
+    color: #BC92AD;
     right: 0;
     width: 90px;
     height: 90px;
@@ -515,7 +516,7 @@ div.carousel-inner .item img {
     color: #333333;
 }
 .left_single_feature h3 span {
-    color: #f39c12;
+    color: #BC92AD;
 }
 .left_single_feature p {
     color: #333;
@@ -565,8 +566,8 @@ div.carousel-inner .item img {
 .btn-action:active,
 .btn-action:focus,
 .btn-action:visited {
-    background: #f39c12;
-    border: 1px solid #f39c12;
+    background: #BC92AD;
+    border: 1px solid #BC92AD;
     color: #fff;
     border-radius: 3px;
     padding: 15px 35px;
@@ -603,12 +604,12 @@ div.carousel-inner .item img {
     -moz-border-radius: 20px;
     border-radius: 20px;
     background: transparent;
-    border: 1px solid #f39c12;
+    border: 1px solid #BC92AD;
 }
 .owl-theme .owl-controls .owl-page.active span,
 .owl-theme .owl-controls.clickable .owl-page:hover span {
     opacity: 1;
-    background: #f39c12;
+    background: #BC92AD;
 }
 /*---------------------------------------
    SECTION FUN FACTS
@@ -627,7 +628,7 @@ div.carousel-inner .item img {
     font-family: 'Source Sans Pro', sans-serif;
 }
 .single_fun_facts i {
-    color: #f39c12;
+    color: #BC92AD;
     font-size: 60px;
     ;
 }
@@ -692,7 +693,7 @@ div.carousel-inner .item img {
     transition: all 1s;
 }
 .single_store i {
-    color: #f39c12;
+    color: #BC92AD;
     text-align: center;
     opacity: 1;
     font-size: 40px;
@@ -769,8 +770,8 @@ div.carousel-inner .item img {
 
 }
 .contact_form .form-control:focus {
-    border: 1px solid #f39c12;
-    border-color: #f39c12;
+    border: 1px solid #BC92AD;
+    border-color: #BC92AD;
     outline: 0px none;
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.075) inset, 0px 0px 0px rgba(102, 175, 233, 0.6);
 }
@@ -795,13 +796,13 @@ div.carousel-inner .item img {
 .submit-btn:focus,
 .submit-btn:visited {
     background-color: transparent;
-    border: 1px solid #f39c12;
+    border: 1px solid #BC92AD;
     border-radius: 4px;
     width: 100%;
     height: 50px;
     text-transform: uppercase;
     font-size: 18px;
-    color: #f39c12;
+    color: #BC92AD;
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
     -o-transition: all 1s;
@@ -809,9 +810,9 @@ div.carousel-inner .item img {
     outline: 0px !important;
 }
 .submit-btn:hover {
-    background-color: #f39c12;
+    background-color: #BC92AD;
     color: #fff;
-    border-color: #f39c12;
+    border-color: #BC92AD;
 }
 .social_icons {
     padding-top: 50px;
@@ -846,12 +847,12 @@ div.carousel-inner .item img {
     font-size: 20px;
 }
 .social_icons ul li a:hover {
-    background: #f39c12;
-    border: 1px solid #f39c12;
+    background: #BC92AD;
+    border: 1px solid #BC92AD;
     color: #fff
 }
 .error {
-    color: #f39c12;
+    color: #BC92AD;
     display: block;
     padding-bottom: 15px;
     font-size: 18px
@@ -928,12 +929,12 @@ div.carousel-inner .item img {
 .subs-btn:visited {
     width: 200px;
     background: transparent;
-    border: 1px solid #f39c12;
+    border: 1px solid #BC92AD;
     border-radius: 4px;
     height: 45px;
     margin-left: 0px;
     margin-bottom: 1px;
-    color: #f39c12;
+    color: #BC92AD;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 17px;
@@ -944,9 +945,9 @@ div.carousel-inner .item img {
     outline: 0px !important;
 }
 .subs-btn:hover {
-    background-color: #f39c12;
+    background-color: #BC92AD;
     color: #fff;
-    border-color: #f39c12;
+    border-color: #BC92AD;
 }
 @media (min-width: 300px) {
     .subscribe_form .form-control {
@@ -971,7 +972,7 @@ div.carousel-inner .item img {
     background-color: #1A1D22;
     padding-bottom: 65px;
     padding-top: 65px;
-    border-bottom: 3px solid #f39c12;
+    border-bottom: 3px solid #BC92AD;
 }
 .copyright h2 {
     height: 0px;
@@ -988,7 +989,7 @@ div.carousel-inner .item img {
 }
 .copy_right_text p a {
     text-decoration: none;
-    color: #f39c12;
+    color: #BC92AD;
 }
 .copy_right_text p span {
     font-weight: 300;
@@ -997,7 +998,7 @@ div.carousel-inner .item img {
     text-align: right;
 }
 .scroll_top a {
-    background: #f39c12;
+    background: #BC92AD;
     padding: 25px;
 }
 .scroll_top a i {

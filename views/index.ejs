@@ -13,7 +13,7 @@
     <title>Bent | App Landing Page</title>
     <!-- Google Font -->
     <link href='https://fonts.googleapis.com/css?family=Raleway:500,600,700,800,900,400,300' rel='stylesheet' type='text/css'>
-
+<link href="https://fonts.googleapis.com/css?family=Lato:300i,400,400i,700,900" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic' rel='stylesheet' type='text/css'>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -69,7 +69,7 @@
 
             <div class="container home-container">
                 <div class="row">
-                    <div class="col-md-12" style="top:-45px;">
+                    <div class="col-md-12" style="top:-20px;">
                         <div class="logo text-center">
                                 <!-- LOGO -->
                             <img width="50%" height="100%" src="images/logo.png" alt="" >
@@ -80,13 +80,15 @@
                     <div class="col-md-7 col-sm-8">
                         <div class="home_text">
                             <!-- TITLE AND DESC -->
-                            <h1>Our 21st Century Town Hall</h1>
-                            <p>Reach connects people and policy. It is a technology platform, a strategy, and a goal. We meet people where they are to better understand them, their communities, their hopes, and their dreams.</p>
 
+                            <div class="col-md-8 col-sm-12" style="padding-left:0;">
+                              <h1>Our 21st Century Town Hall</h1>
+                              <p>Reach connects people 🙋🏽 and policy 📄. It is a technology platform 📱, a strategy 📈, and a goal 🥅. We meet people where they are to better understand them 👩🏽‍🏫, their communities 🏘, their hopes 🙏🏽, and their dreams 💭.</p>
+                            </div>
                             <div class="download-btn">
                             <!-- BUTTON -->
-                                <a class="btn home-btn wow fadeInLeft" href="#DOWNLOAD">Download our report</a>
-                                <a class="tuor btn wow fadeInRight" href="#ABOUT">Join the conversation<i class="fa fa-angle-down"></i></a>
+                                <a class="btn home-btn wow fadeInLeft" href="" download>Download our report</a>
+                                <p class="tuor btn wow fadeInRight">Join the conversation<i class="fa fa-angle-down"></i></p>
                             </div>
                         </div>
                     </div>
@@ -101,20 +103,6 @@
     </section>
 
     <!-- END HEADER SECTION -->
-
-
-
-
-
-
-
-
-
-
-
-<!-- =========================
-     Start Subscription Form
-============================== -->
 
 
 
@@ -173,17 +161,11 @@
                 <div class="col-md-6">
                     <div class="copy_right_text">
                     <!-- COPYRIGHT TEXT -->
-                        <p>Copyright &copy; 2017. All Rights Reserved.</p>
-                        <p>A theme by <a href="https://dcrazed.com/">Dcrazed</a></p>
+                        <p>Contact lcarbonell@ednc.org with questions.</p>
                     </div>
 
                 </div>
 
-                <div class="col-md-6">
-                    <div class="scroll_top">
-                        <a href="#HOME"><i class="fa fa-angle-up"></i></a>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -209,6 +191,29 @@
     <script src="js/jquery.counterup.min.js"></script>
     <script src="js/script.js"></script>
 
+<script>
+
+mySheet.useServiceAccountAuth(creds).then(mySheet.getInfo.bind(mySheet)).then(function(sheet_info ) {
+    console.log( sheet_info.title + ' is loaded' );
+
+    var sheet1 = sheet_info.worksheets[0];
+
+    sheet1.addRow({Col1: 'Val1', Col2: 'Val2'})
+        .then(sheet1.getRows.bind(sheet1, null))
+        .then(function(rows) {
+            return [rows, rows[0].del()];
+        })
+        .spread(function(rows) {
+            console.log('Done deleteing');
+            rows[1].Col7 = 'new val2';
+            return rows[1].save();
+        })
+        .then(console.log.bind(console, 'Done saving'))
+        .catch(function(e) {
+            console.error(e);
+        });
+});
+</script>
 
 </body>
 </html>
