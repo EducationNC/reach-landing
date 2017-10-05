@@ -55,8 +55,8 @@
                     <div class="col-md-12" style="top:-20px;">
                         <div class="logo text-center">
                                 <!-- LOGO -->
-                            <img class="hide-mobile" width="40%" height="100%" src="images/logo.png" alt="" >
-                            <img class="show-mobile" width="70%" height="100%" src="images/logo-white.png" />
+                            <img class="hide-mobile-inline" width="40%" height="100%" src="images/logo.png" alt="" >
+                            <img class="show-mobile-inline" width="70%" height="100%" src="images/logo-white.png" />
                         </div>
                     </div>
                 </div>
@@ -71,13 +71,45 @@
                             </div>
                             <div class="download-btn">
                             <!-- BUTTON -->
-                                <a class="btn home-btn hide-mobile" href="ReachNCVoices.pdf" download>Download our report</a>
-                                <a class="btn home-btn show-mobile" href="ReachNCVoices.pdf" target="_blank">View our report</a>
+                                <a class="btn home-btn hide-mobile-inline" href="ReachNCVoices.pdf" download>Download our report</a>
+                                <a class="btn home-btn show-mobile-inline" href="ReachNCVoices.pdf" target="_blank">View our report</a>
                                 <p class="tuor btn wow fadeInRight" id="join-convo">Join the conversation<i class="fa fa-angle-down"></i></p>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                    <div class="row show-mobile-block no-margs">
+                        <div class="col-md-6 col-md-offset-3">
+
+                            <form id="input-form" class="subscribe_form" method="POST" target="no-target">
+                                <div class="form-group">
+                                    <!-- <input type="email" autocapitalize="off" autocorrect="off" class="email form-control" id="inp-email" placeholder="Enter Email Address" value="" > -->
+
+                                    <input id="input-email" placeholder="Enter Email Address" name="email" class="form-control email">
+                                    <button id="submit-btn" type="submit" class="btn btn-default subs-btn" style="margin-top:20px;">SUBMIT</button>
+                                  </form>
+                                </div>
+
+                                <iframe src="#" id="no-target" name="no-target" style="visibility:hidden" height="0" ></iframe>
+
+                                <script>
+                                    $('#input-form').one('submit',function(){
+                                        var inputName = encodeURIComponent($('#input-email').val());
+                                        var baseURL = 'https://docs.google.com/forms/d/e/1FAIpQLSf1Bmv4KFhPt2oWRuTFHY5UJR3D_ZHI2cB9RaZ-vTRc22pk-A/formResponse?entry.1502069114=';
+                                        var submitRef = '&submit=Submit';
+                                        var submitURL = (baseURL + inputName + submitRef);
+                                        console.log(submitURL);
+                                        $(this)[0].action=submitURL;
+                                        $('#input-email').addClass('active').val('Thank You!');
+                                    });
+                                </script>
+
+                            </div>
+
+
+                        </div>
+
             </div>
           </div>
     </section>
@@ -86,7 +118,7 @@
 
 
 
-    <section class="subscribe">
+    <section class="subscribe hide-mobile-block">
         <div class="section_overlay">
             <div class="container">
                 <div class="row">

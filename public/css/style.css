@@ -37,22 +37,34 @@ p {
     font-size: 14px;
 }
 
-.show-mobile{
+.show-mobile-inline{
   display:none;
 }
-.hide-mobile{
+.hide-mobile-inline{
   display:inline;
 }
+.show-mobile-block{
+  display:none;
+}
+.hide-mobile-block{
+  display:block;
+}
 @media (max-width:768px){
-  .show-mobile{
+  .show-mobile-inline{
     display:inline;
     margin-top:30px;
   }
-  .hide-mobile{
+  .hide-mobile-inline{
+    display:none;
+  }
+  .show-mobile-block{
+    display:block;
+  }
+  .hide-mobile-block{
     display:none;
   }
   #join-convo{
-    margin-top:20px;
+    margin-top:50px;
   }
 
 }
@@ -218,7 +230,20 @@ p {
 }
 .download-btn {
     margin-top: 90px;
-    margin-bottom: 50px
+    margin-bottom: 50px;
+}
+@media (max-width:767px){
+.download-btn{
+    margin-bottom:20px;
+}
+.subscribe_form{
+  padding-top:0!important;
+}
+.no-margs{
+  margin-top:0;
+  display:block;
+}
+
 }
 .home-btn,
 .home-btn:focus,
