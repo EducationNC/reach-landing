@@ -22,6 +22,35 @@
     <!-- Font Awesome -->
     <link href="css/font-awesome.min.css" rel="stylesheet">
 
+    <style>
+    .arrow {
+  text-align: center;
+  margin: 8% 0;
+  color:white;
+}
+.arrow a{
+  text-decoration:none;
+  color:white;
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+    </style>
+
 
 
     <!-- Favicon -->
@@ -67,16 +96,33 @@
 
                             <div class="col-md-8 col-sm-12" style="padding-left:0;">
                               <h1>Our 21st Century Town Hall</h1>
-                              <p>Reach connects people 🙋🏽 and policy 📄. It is a technology platform 📱, a strategy 📈, and a goal 🥅. We meet people where they are to better understand them 👩🏽‍🏫, their communities 🏘, their hopes 🙏🏽, and their dreams 💭.</p>
+                              <p>Reach connects people 🙋🏽 and policy 📄. It is a technology platform 📱, a strategy 📈, and a goal 🥅. We meet people where they are to better understand them 👩🏽‍🏫, their communities 🏘, their hopes 🙏🏽, and their dreams 💭. Text LOVENC to 63735 to get an example of one of our conversations.</p>
+                              <a class="btn home-btn" href="https://www.ednc.org/2017/01/30/introducing-a-new-way-for-you-to-engage-reach-nc/" target="_blank" style="margin-bottom:20px;">Learn more</a>
                             </div>
+
                             <div class="download-btn">
                             <!-- BUTTON -->
-                                <a class="btn home-btn hide-mobile-inline" href="ReachNCVoices.pdf" download>Download our report</a>
-                                <a class="btn home-btn show-mobile-inline" href="ReachNCVoices.pdf" target="_blank">View our report</a>
-                                <p class="tuor btn wow fadeInRight" id="join-convo">Join the conversation<i class="fa fa-angle-down"></i></p>
+
+
+
+
+
+
+                                <!-- <a class="btn home-btn hide-mobile-inline" href="ReachNCVoices.pdf" download>Download our report</a>
+                                <a class="btn home-btn show-mobile-inline" href="ReachNCVoices.pdf" target="_blank">View our report</a> -->
+
                             </div>
+                                <p class="tuor show-mobile-inline" id="join-convo">Join the conversation</p>
                         </div>
                     </div>
+                </div>
+
+                <div class="row hide-mobile-block">
+                  <div class="col-lg-offset-5 col-md-3 col-sm-12">
+                    <div class="arrow bounce">
+<a class="fa fa-arrow-down fa-2x" href="#"></a>
+</div>
+                  </div>
                 </div>
 
                     <div class="row show-mobile-block no-margs">
@@ -138,6 +184,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3">
+
+                          <h2>JOIN THE CONVERSATION</h2>
+                          <p>Sign up to join the Reach NC Voices community.</p>
+
 
                         <form id="input-form" class="subscribe_form" method="POST" target="no-target">
                             <div class="form-group">
