@@ -229,7 +229,7 @@ p {
     font-weight: 300;
 }
 .download-btn {
-    margin-top: 90px;
+    /*margin-top: 90px;*/
     margin-bottom: 50px;
 }
 @media (max-width:767px){
