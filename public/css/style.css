@@ -37,6 +37,10 @@ p {
     font-size: 14px;
 }
 
+.poll-content-div.new-header{
+  display:none!important;
+}
+
 .show-mobile-inline{
   display:none;
 }
@@ -215,11 +219,11 @@ p {
 
 }
 .home_text h1 {
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 38px;
-    font-weight: 300;
-    line-height: 48px;
+  color: #fff;
+  /*text-transform: uppercase;*/
+  font-size: 33px;
+  font-weight: 700;
+  line-height: 48px;
 }
 .home_text p {
     color: #fff;
