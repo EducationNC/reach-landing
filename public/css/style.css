@@ -175,20 +175,14 @@ p {
     background: transparent;
     color: #BC92AD;
 }
-.header {
-    background: url(../images/home.png);
-    background-size: cover;
-	background-repeat: no-repeat;
-}
-@media (max-width: 768px){
+
+
   .header{
     background-image:none;
     background-color:#731454;
   }
-  .subscribe .section_overlay{
-    padding-bottom:0!important;
-  }
-}
+
+
 .header .section_overlay {
     background-color: rgba(33, 33, 33, .45);
 }

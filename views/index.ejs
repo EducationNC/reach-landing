@@ -11,11 +11,6 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Owl Carousel Assets -->
-    <!-- <link href="css/owl.carousel.css" rel="stylesheet">
-    <link href="css/owl.theme.css" rel="stylesheet"> -->
-
-
     <!-- Pixeden Icon Font -->
     <link rel="stylesheet" href="css/Pe-icon-7-stroke.css">
 
@@ -28,17 +23,12 @@
 
     <!-- Style -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/proto.css" rel="stylesheet">
 
     <link href="css/animate.css" rel="stylesheet">
     <!-- Responsive CSS -->
     <link href="css/responsive.css" rel="stylesheet">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-	<![endif]-->
-      <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
   <script>
 
   </script>
@@ -47,84 +37,47 @@
 <body>
 
 
-    <section class="header page" id="HOME">
+
+<section class="header page" id="HOME">
 <div class="section_overlay">
-            <div class="container home-container">
-                <div class="row">
-                    <div class="col-md-12" style="top:-20px;">
-                        <div class="logo text-center">
-                                <!-- LOGO -->
-                            <img class="hide-mobile-inline" width="40%" height="100%" src="images/logo.png" alt="" >
-                            <img class="show-mobile-inline" width="70%" height="100%" src="images/logo-white.png" />
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-7 col-sm-8">
-                        <div class="home_text">
-                            <!-- TITLE AND DESC -->
+  <div class="container home-container">
+      <div class="row">
+          <div class="col-md-8 col-md-offset-2" style="top:-20px;">
+              <div class="logo text-center">
+                <div class="notice info"><p>This is a prototype of our future site. Let us know what you think!</p></div>
 
-                            <div class="col-md-8 col-sm-12" style="padding-left:0;">
-                              <h1>Our 21st Century Town Hall</h1>
-                              <p>Reach connects people 🙋🏽 and policy 📄. It is a technology platform 📱, a strategy 📈, and a goal 🥅. We meet people where they are to better understand them 👩🏽‍🏫, their communities 🏘, their hopes 🙏🏽, and their dreams 💭. Text LOVENC to 63735 to get an example of one of our conversations.</p>
-                              <a class="btn home-btn" href="https://www.ednc.org/2017/01/30/introducing-a-new-way-for-you-to-engage-reach-nc/" target="_blank" style="margin-bottom:20px;">Learn more</a>
-                              <a class="btn home-btn" href="https://www.ednc.org/2017/01/30/introducing-a-new-way-for-you-to-engage-reach-nc/" target="_blank" style="margin-bottom:20px;margin-left:20px;">Join us</a>
-                            </div>
+                  <img width="50%" height="100%" src="images/logo-white.png" />
+                  <div class="content-box quote">
+                    <h3>“...A principal at a <span class="highlight">small impoverished school</span> is managing more complex issues than a large school with a thriving PTA.”
+                    <span class="attr">- A teacher in Lenoir</span></h3>
 
-                            <div class="download-btn">
-                            <!-- BUTTON -->
-
-
-
-
-
-
-                                <!-- <a class="btn home-btn hide-mobile-inline" href="ReachNCVoices.pdf" download>Download our report</a>
-                                <a class="btn home-btn show-mobile-inline" href="ReachNCVoices.pdf" target="_blank">View our report</a> -->
-
-                            </div>
-                                <p class="tuor show-mobile-inline" id="join-convo">Join the conversation</p>
-                        </div>
-                    </div>
-                </div>
-
-              
                   </div>
-                </div>
 
-                    <div class="row show-mobile-block no-margs">
-                        <div class="col-md-6 col-md-offset-3">
+                  <div class="content-box quote">
+                    <h3>“...A principal at a <span class="highlight">small impoverished school</span> is managing more complex issues than a large school with a thriving PTA.”
+                    <span class="attr">- A teacher in Lenoir</span></h3>
 
-                            <form id="input-form" class="subscribe_form" method="POST" target="no-target">
-                                <div class="form-group">
-                                    <!-- <input type="email" autocapitalize="off" autocorrect="off" class="email form-control" id="inp-email" placeholder="Enter Email Address" value="" > -->
+                  </div>
 
-                                    <input id="input-email" placeholder="Enter Email Address" name="email" class="form-control email">
-                                    <button id="submit-btn" type="submit" class="btn btn-default subs-btn" style="margin-top:20px;">SUBMIT</button>
-                                  </form>
-                                </div>
+                  <div class="content-box quote">
+                    <h3>“...A principal at a <span class="highlight">small impoverished school</span> is managing more complex issues than a large school with a thriving PTA.”
+                    <span class="attr">- A teacher in Lenoir</span></h3>
 
-                                <iframe src="#" id="no-target" name="no-target" style="visibility:hidden" height="0" ></iframe>
+                  </div>
 
-                                <script>
-                                    $('#input-form').one('submit',function(){
-                                        var inputName = encodeURIComponent($('#input-email').val());
-                                        var baseURL = 'https://docs.google.com/forms/d/e/1FAIpQLSf1Bmv4KFhPt2oWRuTFHY5UJR3D_ZHI2cB9RaZ-vTRc22pk-A/formResponse?entry.1502069114=';
-                                        var submitRef = '&submit=Submit';
-                                        var submitURL = (baseURL + inputName + submitRef);
-                                        console.log(submitURL);
-                                        $(this)[0].action=submitURL;
-                                        $('#input-email').addClass('active').val('Thank You!');
-                                    });
-                                </script>
+                  <div class="content-box quote">
+                    <h3>“...A principal at a <span class="highlight">small impoverished school</span> is managing more complex issues than a large school with a thriving PTA.”
+                    <span class="attr">- A teacher in Lenoir</span></h3>
 
-                            </div>
+                  </div>
 
-
-                        </div>
-
-            </div>
+              </div>
           </div>
+      </div>
+
+  </div>
+
+
     </section>
 
     <!-- END HEADER SECTION -->
