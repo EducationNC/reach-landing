@@ -1,0 +1,10 @@
+#scroll-box{
+      position: absolute;
+      bottom: 0;
+      width: 142px;
+      left: 250px;
+      height: 257px;
+      top: 101px;
+      overflow: scroll;
+      overflow-x: hidden;
+}
