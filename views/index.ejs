@@ -90,15 +90,40 @@
 	margin:0;
 }
 
+h1{
+  font-size: 46px;
+text-align: center;
+margin-bottom: 23px;
+}
+h3{
+  text-align: center;
+    width: 40em;
+    font-size: 20px;
+}
+
 .col-text{
-  font-size:1.3em;
+  font-size:18px;
+  text-align:center;
 }
 .col-img{
   max-width:400px;
 }
 .img-wrapper{
-  height:280px;
-  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+
+}
+.img-wrapper img{
+
+
+}
+.flex-center{
+  display:flex;
+  justify-content: center;
+}
+h4{
+  font-size:30px;
+  text-align:center;
 }
 
   </style>
@@ -252,9 +277,11 @@
 
 
 <div class="container-fluid" style="max-width:1500px;">
-  <div class="row">
+  <div class="row" style="margin-bottom: 60px;">
     <div class="col-lg-12">
       <h1>So...it's a survey tool?</h1>
+    </div>
+    <div class="col-lg-12 flex-center">
       <h3><span style="font-weight:700;">Not quite.</span> While question sets are a prevalent tool in our toolkit, we do so much more than collect responses.</h3>
     </div>
   </div>
@@ -262,6 +289,7 @@
       <div class="col-lg-4">
 
         <div class="img-wrapper">
+          <h4>Engage</h4>
           <p class="col-text">We engage with communities through events, whether we host them or attend them.</p>
           <img class="col-img" src="images/osborne_event.jpg" />
         </div>
@@ -269,6 +297,7 @@
       <div class="col-lg-4">
 
         <div class="img-wrapper">
+          <h4>Connect</h4>
           <p class="col-text">We use our journalism tools to connect with policymakers and help enact change.</p>
           <img class="col-img" src="images/roycooper.jpg" />
         </div>
@@ -276,8 +305,9 @@
       <div class="col-lg-4">
 
         <div class="img-wrapper">
-          <p class="col-text">We offer our platform in various forms to connect community members who would otherwise be divided.</p>
-          <img class="col-img" src="images/firstvote.jpg" />
+          <h4>Provide</h4>
+          <p class="col-text">We offer our platform in various forms to connect community members.</p>
+          <img class="col-img" src="images/lakewood.jpg" />
         </div>
       </div>
     </div>
