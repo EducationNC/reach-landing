@@ -19,6 +19,7 @@
   "dependencies": {
     "ejs": "^2.5.7",
     "express": "^4.16.1",
+    "fullpage.js": "^2.9.5",
     "google-sheets-node-api": "^0.3.0"
   }
 }
