@@ -125,6 +125,12 @@ h4{
   font-size:30px;
   text-align:center;
 }
+.img-crop{
+  max-height:250px;
+  overflow:hidden;
+  display:flex;
+  justify-content:center;
+}
 
   </style>
 </head>
@@ -291,7 +297,7 @@ h4{
         <div class="img-wrapper">
           <h4>Engage</h4>
           <p class="col-text">We engage with communities through events, whether we host them or attend them.</p>
-          <img class="col-img" src="images/osborne_event.jpg" />
+          <div class="img-crop"><img class="col-img" src="images/osborne_event.jpg" /></div>
         </div>
       </div>
       <div class="col-lg-4">
@@ -299,7 +305,7 @@ h4{
         <div class="img-wrapper">
           <h4>Connect</h4>
           <p class="col-text">We use our journalism tools to connect with policymakers and help enact change.</p>
-          <img class="col-img" src="images/roycooper.jpg" />
+          <div class="img-crop"><img class="col-img" src="images/roycooper.jpg" /></div>
         </div>
       </div>
       <div class="col-lg-4">
@@ -307,7 +313,7 @@ h4{
         <div class="img-wrapper">
           <h4>Provide</h4>
           <p class="col-text">We offer our platform in various forms to connect community members.</p>
-          <img class="col-img" src="images/lakewood.jpg" />
+          <div class="img-crop"><img class="col-img" src="images/lakewood.jpg" /></div>
         </div>
       </div>
     </div>
