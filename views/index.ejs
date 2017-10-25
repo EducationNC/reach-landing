@@ -90,15 +90,28 @@
 	margin:0;
 }
 
+.col-text{
+  font-size:1.3em;
+}
+.col-img{
+  max-width:400px;
+}
+.img-wrapper{
+  height:280px;
+  overflow:hidden;
+}
+
   </style>
 </head>
 
 <body>
 
       <ul id="menu">
-      	<li data-menuanchor="firstPage"><a href="#firstPage">First slide</a></li>
-      	<li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
-      	<li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
+      	<li data-menuanchor="Home"><a href="#Home">Home</a></li>
+      	<li data-menuanchor="Join"><a href="#Join">Join the conversation</a></li>
+      	<li data-menuanchor="What"><a href="#What">What we do</a></li>
+        <li data-menuanchor="How"><a href="#How">How we do it</a></li>
+        <li data-menuanchor="Contact"><a href="#Contact">Contact us</a></li>
       </ul>
   <div id="fullpage">
 
@@ -225,8 +238,56 @@
 
 <div class="section">
 
-    <h1>So...it's a survey tool?</h1>
+
+    <!-- <h3><span style="font-weight:700;">Not quite.</span> While question sets are a prevalent tool in our toolkit, we do so much more than collect responses.</h3>
     <h3><span style="font-weight:700;">Not quite.</span> While question sets are a prevalent tool in our toolkit, we do so much more than collect responses.</h3>
+    <h3><span style="font-weight:700;">Not quite.</span> While question sets are a prevalent tool in our toolkit, we do so much more than collect responses.</h3>
+    <h3><span style="font-weight:700;">Not quite.</span> While question sets are a prevalent tool in our toolkit, we do so much more than collect responses.</h3>
+    <h3><span style="font-weight:700;">Not quite.</span> While question sets are a prevalent tool in our toolkit, we do so much more than collect responses.</h3>
+    <h3><span style="font-weight:700;">Not quite.</span> While question sets are a prevalent tool in our toolkit, we do so much more than collect responses.</h3>
+    <h3><span style="font-weight:700;">Not quite.</span> While question sets are a prevalent tool in our toolkit, we do so much more than collect responses.</h3>
+    <h3><span style="font-weight:700;">Not quite.</span> While question sets are a prevalent tool in our toolkit, we do so much more than collect responses.</h3>
+    <h3><span style="font-weight:700;">Not quite.</span> While question sets are a prevalent tool in our toolkit, we do so much more than collect responses.</h3> -->
+
+
+
+<div class="container-fluid" style="max-width:1500px;">
+  <div class="row">
+    <div class="col-lg-12">
+      <h1>So...it's a survey tool?</h1>
+      <h3><span style="font-weight:700;">Not quite.</span> While question sets are a prevalent tool in our toolkit, we do so much more than collect responses.</h3>
+    </div>
+  </div>
+    <div class="row" style="margin-top:1.2em;">
+      <div class="col-lg-4">
+
+        <div class="img-wrapper">
+          <p class="col-text">We engage with communities through events, whether we host them or attend them.</p>
+          <img class="col-img" src="images/osborne_event.jpg" />
+        </div>
+      </div>
+      <div class="col-lg-4">
+
+        <div class="img-wrapper">
+          <p class="col-text">We use our journalism tools to connect with policymakers and help enact change.</p>
+          <img class="col-img" src="images/roycooper.jpg" />
+        </div>
+      </div>
+      <div class="col-lg-4">
+
+        <div class="img-wrapper">
+          <p class="col-text">We offer our platform in various forms to connect community members who would otherwise be divided.</p>
+          <img class="col-img" src="images/firstvote.jpg" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="section">
+
+    <h1>How it works</h1>
 
 </div>
 
@@ -245,12 +306,12 @@
 <script>
 $(document).ready(function() {
   $('#fullpage').fullpage({
-  				anchors: ['firstPage', 'secondPage', '3rdPage'],
-  				sectionsColor: ['#DAC500', '#1BBC9B', '#7E8F7C'],
+  				anchors: ['Home', 'Join', 'What', 'How', 'Contact'],
+  				sectionsColor: ['#DAC500', '#1BBC9B', '#5681B54', '#7E8F7C', '#5681B54'],
   				menu: '#menu',
   				navigation: true,
   				navigationPosition: 'right',
-  				navigationTooltips: ['First page', 'Second page', 'Third and last page'],
+  				navigationTooltips: ['Home', 'Join', 'What', 'How', 'Contact'],
   				responsiveWidth: 1100
   			});
       });
