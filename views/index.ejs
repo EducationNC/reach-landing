@@ -46,6 +46,7 @@
   <link href="css/jquery.fullpage.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
   <script src="js/jquery.min.js"></script>
@@ -157,7 +158,7 @@ h4{
 #section0{
   background-size:cover;
   background-image:url('../images/inside_brew.png');
-  padding:30% 0 0 0;
+  padding:0 0 0 0;
 }
 h1{
   color: white;
@@ -180,12 +181,21 @@ font-weight: 300;
 p{
   font-size: 24px;
 line-height: 35px;
+font-size: 28px;
+font-weight: 700;
 text-align:center;
 }
 span.p-sub{
-  display:block;
-  font-style:italic;
-      font-size: 20px;
+  /*display:block;
+  font-weight:400;
+  font-size: 20px;*/
+  font-weight: 400;
+    max-width: 400px;
+    font-size: 19px;
+    text-align: center;
+    margin-top: 13px;
+    display: inline-flex;
+    justify-content: center;
 }
 h4.lil-question{
   font-style: italic;
@@ -203,6 +213,19 @@ text-align: left;
 }
 img[src^="images/logos"] {
   max-width:100%;
+}
+.logo-row>.col-lg-2{
+  display:flex;
+  align-items: end;
+}
+.logo-row{
+  margin-top:40px;
+}
+.slick-prev:before, .slick-next:before{
+  font-size:50px;
+}
+.fa{
+  font-size: 44px;
 }
   </style>
 </head>
@@ -276,36 +299,49 @@ img[src^="images/logos"] {
 
 </div>
 
-<div class="section">
+<div class="section" style="color:white!important;">
   <div class="container">
   <div class="row">
     <div class="col-lg-12 flex-center">
-      <h1>The steps to reach N.C. voices:</h1>
+      <h1>Our Process:</h1>
     </div>
   </div>
   <div class="row">
       <div class="col-lg-6">
+        <div class="row"><div class="col-lg-12 flex-center"><i class="fa fa-question-circle" aria-hidden="true"></i></div></div>
+
         <p>It starts with a question. <span class="p-sub">Maybe it's about how much principals should be paid, or when the class day should start.</span></p>
+
       </div>
       <div class="col-lg-6">
-        <p>We take that question to the community. <span class="p-sub">We meet people where they are — their inbox, their phone or somewhere else — and invite them to share their insights and experiences.</p>
+        <div class="row"><div class="col-lg-12 flex-center"><i class="fa fa-comments-o" aria-hidden="true"></i></div></div>
+
+        <p>We take that question to the community. <span class="p-sub">We meet you where you are — inbox, phone, or in your community — and invite you to share your stories.</p>
       </div>
   </div>
-  <div class="row">
+  <div class="row" style="margin-top:40px;">
   <div class="col-lg-6">
-    <p>Then we analyze the responses so we can take action. <span class="p-sub">This might mean writing a story, sending a report to a policymaker, or fostering continued conversation.</span></p>
+    <div class="row"><div class="col-lg-12 flex-center"><i class="fa fa-search" aria-hidden="true"></i>
+    <i class="fa fa-bullhorn" aria-hidden="true"></i></div></div>
+    <p>Analyze the responses and take action. <span class="p-sub">This might mean writing a story, sending a report to a policymaker, or fostering continued conversation.</span></p>
+
+
 
   </div>
     <div class="col-lg-6">
-      <p>Then we return to you. <span class="p-sub">We call this "closing the engagement loop" and it means that our conversation will always continue with us providing you with helpful information.</span></p>
+      <div class="row"><div class="col-lg-12 flex-center"><i class="fa fa-handshake-o" aria-hidden="true"></i></div></div>
+
+      <p>Then — always — return to you. <span class="p-sub">Having a conversation with Reach means that we will always provide you with helpful information, whether that means showing you what we found, or connecting you with further resources.</span></p>
     </div>
   </div>
-  </div>
-  <div class="row">
+
+  <!-- <div class="row" style="margin-top:40px;">
     <div class="col-lg-12 flex-center">
-      <p>The details of this cycle are constantly changing. As Reach NC Voices evolves, we're listening not only to your experiences with education, but your experiences with us. Let us know how we can help you — it's what we're here for.</p>
+      <p style="font-weight:100;text-align:left;">The details of this cycle are constantly changing. As Reach NC Voices evolves, we're listening not only to your experiences with education, but your experiences with us. Let us know how we can help you — it's what we're here for.</p>
     </div>
+  </div> -->
   </div>
+
 </div>
 
 <div class="section">
@@ -346,7 +382,7 @@ img[src^="images/logos"] {
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <div id="poll-wrap">
+          <div id="reach-poll">
             <iframe id="embed67361" src="//app.cityzen.io/display/?projId=2079&embedId=67361" width="100%" height="425" frameborder="0" scrolling="yes"></iframe>
             <script>(function (c, i, t, y, z, e, n, x) { x = c.createElement(y), n = c.getElementsByTagName(y)[0]; x.async = 1; x.src = t; n.parentNode.insertBefore(x, n); i.czen = { pub: z, dom: e };})(document, window, 'https://publicinput.com/static/pub.js', 'script', 1114, 3);</script>
           </div>
@@ -365,32 +401,38 @@ img[src^="images/logos"] {
 
     </div>
 
-    <div class="row">
-      <div class="col-lg-3"><img src="images/logos/BCBS.png" alt="" width="150"></div>
-      <div class="col-lg-3"><img src="images/logos/belk.png" alt="" width="150"></div>
-      <div class="col-lg-3"><img src="images/logos/burr.png" alt="" width="150"></div>
-      <div class="col-lg-3"><img src="images/logos/d-endow.png" alt="" width="150"></div>
+    <div class="row flex-center logo-row">
+      <div class="col-lg-2"><img src="images/logos/BCBS.png" alt="" width="150"></div>
+      <div class="col-lg-2"><img src="images/logos/belk.png" alt="" width="150"></div>
+
+      <div class="col-lg-2"><img src="images/logos/d-endow.png" alt="" width="150"></div>
+      <div class="col-lg-2"><img src="images/logos/d-energy.png" alt="" width="150"></div>
+      <div class="col-lg-2"><img src="images/logos/jwpope.png" alt="" width="150"></div>
+      <div class="col-lg-2"><img src="images/logos/zsmith.png" alt="" width="150"></div>
 
     </div>
 
-    <div class="row">
-      <div class="col-lg-3"><img src="images/logos/d-energy.png" alt="" width="150"></div>
-      <div class="col-lg-3"><img src="images/logos/jwpope.png" alt="" width="150"></div>
-      <div class="col-lg-3"><img src="images/logos/mebane.png" alt="" width="150"></div>
-      <div class="col-lg-3"><img src="images/logos/o2.png" alt="" width="150"></div>
+    <div class="row flex-center logo-row">
+
+      <div class="col-lg-2"><img src="images/logos/mebane.png" alt="" width="150"></div>
+      <div class="col-lg-2"><img src="images/logos/william-trust.png" alt="" width="150"></div>
+
+
+      <!-- <div class="row"> -->
+        <div class="col-lg-2"><img src="images/logos/park.png" alt="" width="150"></div>
+        <div class="col-lg-2"><img src="images/logos/sas.png" alt="" width="150"></div>
+        <div class="col-lg-2"><img src="images/logos/viacom.png" alt="" width="150"></div>
+
+
+      </div>
+
+      <div class="row flex-center logo-row">
+        <div class="col-lg-2"><img src="images/logos/o2.png" alt="" width="100"></div>
+
+        <div class="col-lg-2"><img src="images/logos/burr.png" alt="" width="100"></div>
+        <div class="col-lg-2"><img src="images/logos/wells-fargo.png" alt="" width="100"></div>
+      </div>
     </div>
-
-      <div class="row">
-        <div class="col-lg-3"><img src="images/logos/park.png" alt="" width="150"></div>
-        <div class="col-lg-3" src="images/logos/sas.png" alt="" width="150"></div>
-        <div class="col-lg-3"><img src="images/logos/viacom.png" alt="" width="150"></div>
-        <div class="col-lg-3"><img src="images/logos/wells-fargo.png" alt="" width="150"></div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-3"><img src="images/logos/william-trust.png" alt="" width="150"></div>
-        <div class="col-lg-3"><img src="images/logos/zsmith.png" alt="" width="150"></div>
-      </div>
 
 
 
@@ -420,7 +462,7 @@ img[src^="images/logos"] {
 $(document).ready(function() {
   $('#fullpage').fullpage({
   				anchors: ['Home', 'Join', 'What', 'How', 'Contact', 'Partners'],
-  				sectionsColor: ['#DAC500', '#1BBC9B', '#DAC500', '#7E8F7C', '#1BBC9B', '#DAC500'],
+  				sectionsColor: ['#DAC500', '#1BBC9B', '#1d2a56', '#7E8F7C', '#1BBC9B', '#1C2957'],
   				menu: '#menu',
   				navigation: true,
   				navigationPosition: 'right',
@@ -433,8 +475,8 @@ $(document).ready(function() {
           dots: true,
           infinite: false,
           speed: 300,
-          slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToShow: 1,
+          slidesToScroll: 1,
           responsive: [
             {
               breakpoint: 1024,
