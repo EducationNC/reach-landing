@@ -355,6 +355,7 @@ img[src^="images/logos"] {
       <div>
         <h4 class="lil-question">What role do you think N.C. community colleges will play in 20 years?</h4>
         <h4 class="lil-answer">"I see a LOT of adults using community colleges to retool for second [and third] careers. The need for community colleges is growing..and we need...strong community colleges in our state in order to meet the varied educational needs of our population."</h4>
+        <p>-A teacher from Edgecombe County</p>
       </div>
       <div>
         <h4 class="lil-question">How do you use EVAAS?</h4>
@@ -506,45 +507,6 @@ $(document).ready(function() {
             // instead of a settings object
           ]
         });
-
-        $('#smooth-slide').slick({
-          dots: true,
-          infinite: false,
-          speed: 300,
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          responsive: [
-            {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                infinite: true,
-                dots: true
-              }
-            },
-            {
-              breakpoint: 600,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
-              }
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-              }
-            }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
-          ]
-        });
-
-
-
 
       });
 
