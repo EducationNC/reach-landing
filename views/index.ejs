@@ -205,7 +205,13 @@ h4.lil-question{
 }
 h4.lil-answer{
   line-height: 43px;
-text-align: left;
+  text-align: left;
+  font-weight: 700;
+}
+p.lil-attribute{
+  text-align:left;
+  font-size: 19px;
+  font-weight: 400;
 }
 
 .slick-slide{
@@ -227,6 +233,28 @@ img[src^="images/logos"] {
 .fa{
   font-size: 42px;
 }
+.quote-card{
+  background-color: #E1D0DA;
+  border-left: 1.5em solid purple;
+}
+.slick-prev {
+    left: -78px;
+}
+#menu li{
+  margin:0!important;
+  border:none!important;
+  border-radius:0!important;
+}
+#powerby{
+  width: 100px!important;
+
+}
+#powerby-wrap{
+  background: none!important;
+  border: none!important;
+  float: right!important;
+}
+
   </style>
 </head>
 
@@ -234,10 +262,13 @@ img[src^="images/logos"] {
 
       <ul id="menu">
       	<li data-menuanchor="Home"><a href="#Home">Home</a></li>
-      	<li data-menuanchor="Join"><a href="#Join">Join the conversation</a></li>
-      	<li data-menuanchor="What"><a href="#What">What we do</a></li>
-        <li data-menuanchor="How"><a href="#How">How we do it</a></li>
-        <li data-menuanchor="Contact"><a href="#Contact">Contact us</a></li>
+      	<li data-menuanchor="Who"><a href="#Who">Who we are</a></li>
+      	<li data-menuanchor="Process"><a href="#Process">Our process</a></li>
+        <li data-menuanchor="People"><a href="#People">What people are saying</a></li>
+        <li data-menuanchor="Join"><a href="#Join">Join the conversation</a></li>
+        <li data-menuanchor="Partners"><a href="#Partners">Our partners</a></li>
+        <li id="powerby-wrap"><a href="http://ednc.org/" target="_blank"><img id="powerby" src="images/powerby.png" alt="" style="width:200px;"></a></li>
+
       </ul>
   <div id="fullpage">
 
@@ -367,15 +398,15 @@ img[src^="images/logos"] {
         <h1>Here's what people are saying</h1>
       </div>
     </div>
-    <div class="row responsive">
+    <div class="row responsive quote-card">
       <div>
         <h4 class="lil-question">What role do you think N.C. community colleges will play in 20 years?</h4>
-        <h4 class="lil-answer">"I see a LOT of adults using community colleges to retool for second [and third] careers. The need for community colleges is growing..and we need...strong community colleges in our state in order to meet the varied educational needs of our population."</h4>
-        <p>-A teacher from Edgecombe County</p>
+        <h4 class="lil-answer">&ldquo;I see a LOT of adults using community colleges to retool for second [and third] careers. The need for community colleges is growing..and we need...strong community colleges in our state in order to meet the varied educational needs of our population.&rdquo;</h4>
+        <p class="lil-attribute">-A teacher from Edgecombe County</p>
       </div>
       <div>
         <h4 class="lil-question">How do you use EVAAS?</h4>
-        <h4 class="lil-answer">"I look at it after it comes out and then never look at it again until the next year's rating comes out. It isn't talked about during my PDP and no one has been able to give me a straight answer if anyone in our district is looking at it. Seems like another waste of money to me."</h4>
+        <h4 class="lil-answer">&ldquo;I look at it after it comes out and then never look at it again until the next year's rating comes out. It isn't talked about during my PDP and no one has been able to give me a straight answer if anyone in our district is looking at it. Seems like another waste of money to me.&rdquo;</h4>
       </div>
       <div>
         <h4 class="lil-question">How do you use EVAAS?</h4>
@@ -478,12 +509,12 @@ img[src^="images/logos"] {
 <script>
 $(document).ready(function() {
   $('#fullpage').fullpage({
-  				anchors: ['Home', 'Join', 'What', 'How', 'Contact', 'Partners'],
-  				sectionsColor: ['#DAC500', '#1BBC9B', '#1d2a56', '#7E8F7C', '#1BBC9B', '#1C2957'],
+  				anchors: ['Home', 'Who', 'Process', 'People', 'Join', 'Partners'],
+  				sectionsColor: ['#DAC500', '#1BBC9B', '#1d2a56', '#059EBE', '#1BBC9B', '#1C2957'],
   				menu: '#menu',
   				navigation: true,
   				navigationPosition: 'right',
-  				navigationTooltips: ['Home', 'Join', 'What', 'How', 'Contact', 'Partners'],
+  				navigationTooltips: ['Home', 'Who', 'Process', 'People', 'Join', 'Partners'],
   				responsiveWidth: 1100
   			});
 
@@ -527,6 +558,7 @@ $(document).ready(function() {
       });
 
 </script>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 
