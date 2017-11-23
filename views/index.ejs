@@ -255,6 +255,61 @@ img[src^="images/logos"] {
   float: right!important;
 }
 
+
+
+
+.arrow {
+  text-align: center;
+  margin: 3% 0;
+}
+.arrow a{
+
+  color: white;
+  text-decoration: none;
+
+}
+.bounce {
+  -webkit-animation: bounce 2s 4;
+  animation: bounce 2s 4;
+}
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+
+
   </style>
 </head>
 
@@ -281,9 +336,15 @@ img[src^="images/logos"] {
       <h3 class="subtitle">North Carolina's 21st Century Town Hall</h3>
     </div>
   </div>
+  <div class="row flex-center">
+    <div class="col-lg-12">
 
-  <!-- <h1>Reach NC Voices</h1>
-  <h3 class="subtitle">North Carolina's 21st Century Town Hall</h3> -->
+      <div class="arrow bounce">
+        <p style="color:white;">Sign up</p>
+        <a class="fa fa-arrow-down fa-2x" href="#"></a>
+      </div>
+    </div>
+  </div>
 </div>
 
 
@@ -301,40 +362,7 @@ img[src^="images/logos"] {
       <p class="big-slide-body"><span style="font-weight:700;">Reach is a project of EducationNC that brings unheard voices back to public discourse.</span> EducationNC was founded on the concept that voices of North Carolinians in rural communities were lost in policy discussions — Reach NC Voices is our first initiative that addresses those conversations directly. We have already spent time informing citizens — now we want to use our technology to listen.</p>
     </div>
   </div>
-    <!-- <div class="row" style="margin-top:1.2em;">
-      <div class="col-lg-4">
-
-        <div class="img-wrapper">
-          <h4>Engage</h4>
-          <p class="col-text">We engage with communities through events, whether we host them or attend them.</p>
-          <div class="img-crop"><img class="col-img" src="images/osborne_event.jpg" /></div>
-        </div>
-      </div>
-      <div class="col-lg-4">
-
-        <div class="img-wrapper">
-          <h4>Connect</h4>
-          <p class="col-text">We use our journalism tools to connect with policymakers and help enact change.</p>
-          <div class="img-crop"><img class="col-img" src="images/roycooper.jpg" /></div>
-        </div>
-      </div>
-      <div class="col-lg-4">
-
-        <div class="img-wrapper">
-          <h4>Provide</h4>
-          <p class="col-text">We offer our platform in various forms to connect community members.</p>
-          <div class="img-crop"><img class="col-img" src="images/lakewood.jpg" /></div>
-          <div id="this_modal" class="modal">
-            <p>Thanks for clicking. That felt good.</p>
-            <a href="#" rel="modal:close">Close</a>
-          </div>
-
-          <p><a href="#this_modal" rel="modal:open">Open Modal</a></p>
-
-        </div>
-      </div>
-    </div> -->
-  </div>
+</div>
 
 </div>
 
