@@ -377,6 +377,9 @@ i.fa{
 i.fa.fa-plus-square-o{
   font-size:20pt;
 }
+i.fa.fa-arrows-h{
+  font-size:15pt;
+}
 
 
 
@@ -524,5 +527,20 @@ ul.nav.navbar-nav{
 
     #logo-list{
     display:none;
+    }
+
+    h4.lil-question {
+        font-size: 15pt;
+        line-height: 23pt;
+    }
+    h4.lil-answer {
+    font-size: 12pt;
+    line-height: 24pt;
+    }
+    p.lil-attribute{
+      font-size: 12pt;
+    line-height: 7pt;
+    margin-left: 12pt;
+    font-style: italic;
     }
 }
