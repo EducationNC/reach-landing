@@ -98,7 +98,9 @@
       <h1>What is Reach NC Voices?</h1>
     </div>
     <div class="col-lg-12 flex-center">
-      <p class="big-slide-body"><span style="font-weight:700;">Reach is a project of EducationNC that brings unheard voices back to public discourse.</span> EducationNC was founded on the concept that voices of North Carolinians in rural communities were lost in policy discussions — Reach NC Voices is our first initiative that addresses those conversations directly. We have already spent time informing citizens — now we want to use our technology to listen.</p>
+      <!-- <p class="big-slide-body"><span style="font-weight:700;">Reach is a project of EducationNC that brings unheard voices back to public discourse.</span> EducationNC was founded on the concept that voices of North Carolinians in rural communities were lost in policy discussions — Reach NC Voices is our first initiative that addresses those conversations directly. We have already spent time informing citizens — now we want to use our technology to listen.</p> -->
+      <p class="big-slide-body">Reach is a project of EducationNC working to bring unheard voices back to the public discourse. Through direct conversation, we want to show people that they matter, so they will be empowered to civically engage. Too many North Carolinians are not having their stories heard. And now that we have spent time <a href="http://ednc.org/" style="color:#25366A;text-decoration:underline;">informing</a> citizens, we want to use our technology to listen.</p>
+
     </div>
   </div>
 </div>
@@ -219,11 +221,11 @@
 
 <div class="section">
 
-    <h1>Join the conversation</h1>
+    <h1>Connect with us</h1>
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <h4>Here is some explainer text about what you'll get if you sign up for Reach.</h4>
+          <h4>Join our community of North Carolinians who are sharing their thoughts on issues that matter to our state and gain a direct line to decision makers by sharing your stories, hopes, dreams, and aspirations.</h4>
         </div>
         <div class="col-lg-12">
           <div id="reach-poll">
@@ -321,11 +323,10 @@
 $(document).ready(function() {
   $('#fullpage').fullpage({
   				anchors: ['Home', 'Who', 'Process', 'People', 'Share', 'Join', 'Partners'],
-  				sectionsColor: ['#DAC500', '#1BBC9B', '#1d2a56', '#059EBE', '#1BBC9B', '#1BBC9B', '#1C2957'],
+          sectionsColor: ['#DEE4F2', '#769BBE', '#5681B4', '#4C6F96', '#43688F', '#505E87', '#25366A'],
+          // sectionsColor: ['#DAC500', '#1BBC9B', '#1d2a56', '#059EBE', '#1BBC9B', '#1BBC9B', '#1C2957'],
   				menu: '#menu',
-  				navigation: true,
-  				navigationPosition: 'right',
-  				navigationTooltips: ['Home', 'Who', 'Process', 'People', 'Join', 'Partners'],
+  				navigation: false,
   				responsiveWidth: 1100,
           autoScrolling: false
   			});
