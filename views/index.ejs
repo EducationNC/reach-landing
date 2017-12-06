@@ -7,51 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Reach NC Voices by EducationNC</title>
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:300i,400,400i,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:200,300,300i,400,400i,700,900" rel="stylesheet">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Owl Carousel Assets -->
-    <!-- <link href="css/owl.carousel.css" rel="stylesheet">
-    <link href="css/owl.theme.css" rel="stylesheet"> -->
-
-
-    <!-- Pixeden Icon Font -->
-    <link rel="stylesheet" href="css/Pe-icon-7-stroke.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
 
     <!-- Font Awesome -->
     <link href="css/font-awesome.min.css" rel="stylesheet">
 
-    <style>
-    .arrow {
-  text-align: center;
-  margin: 8% 0;
-  color:white;
-}
-.arrow a{
-  text-decoration:none;
-  color:white;
-}
-.bounce {
-  -moz-animation: bounce 2s infinite;
-  -webkit-animation: bounce 2s infinite;
-  animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
-}
-    </style>
-
-
+    <link rel="stylesheet" href="css/animation.css" />
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -59,146 +24,378 @@
     <!-- Style -->
     <link href="css/style.css" rel="stylesheet">
 
-    <link href="css/animate.css" rel="stylesheet">
-    <!-- Responsive CSS -->
-    <link href="css/responsive.css" rel="stylesheet">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-	<![endif]-->
-      <script src="js/jquery.min.js"></script>
-  <script>
+    <link href="css/jquery.fullpage.min.css" rel="stylesheet">
 
-  </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="js/jquery.min.js"></script>
+
 </head>
 
 <body>
 
-
-    <section class="header page" id="HOME">
-<div class="section_overlay">
-            <div class="container home-container">
-                <div class="row">
-                    <div class="col-md-12" style="top:-20px;">
-                        <div class="logo text-center">
-                                <!-- LOGO -->
-                            <img class="hide-mobile-inline" width="40%" height="100%" src="images/logo.png" alt="" >
-                            <img class="show-mobile-inline" width="70%" height="100%" src="images/logo-white.png" />
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-7 col-sm-8">
-                        <div class="home_text">
-                            <!-- TITLE AND DESC -->
-
-                            <div class="col-md-8 col-sm-12" style="padding-left:0;">
-                              <h1>Our 21st Century Town Hall</h1>
-                              <p>Reach connects people 🙋🏽 and policy 📄. It is a technology platform 📱, a strategy 📈, and a goal 🥅. We meet people where they are to better understand them 👩🏽‍🏫, their communities 🏘, their hopes 🙏🏽, and their dreams 💭. Text LOVENC to 63735 to get an example of one of our conversations.</p>
-                              <a class="btn home-btn" href="https://www.ednc.org/2017/01/30/introducing-a-new-way-for-you-to-engage-reach-nc/" target="_blank" style="margin-bottom:20px;">Learn more</a>
-                            </div>
-
-                            <div class="download-btn">
-                            <!-- BUTTON -->
-
-
-
-
-
-
-                                <!-- <a class="btn home-btn hide-mobile-inline" href="ReachNCVoices.pdf" download>Download our report</a>
-                                <a class="btn home-btn show-mobile-inline" href="ReachNCVoices.pdf" target="_blank">View our report</a> -->
-
-                            </div>
-                                <p class="tuor show-mobile-inline" id="join-convo">Join the conversation</p>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row hide-mobile-block">
-                  <div class="col-lg-offset-5 col-md-3 col-sm-12">
-                    <div class="arrow bounce">
-                      <a class="fa fa-arrow-down fa-2x" href="#"></a>
-                    </div>
-                  </div>
-                </div>
-
-                    <div class="row show-mobile-block no-margs">
-                      <iframe id="embed73848" src="//app.cityzen.io/display/?id=7020&embedId=73848" width="100%" height="425" frameborder="0" scrolling="yes"></iframe>
-                      
-
-
-                    </div>
-
+  <nav class="nav-down navbar navbar-toggleable-md navbar-dark bg-faded" style="margin-top:0;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"><i class="fa fa-plus-square-o" aria-hidden="true"></i> menu</span></button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01" style="padding:0;">
+        <!-- <div class="container-fluid" style="padding:0;"> -->
+        <div id="powerby-wrap">
+          <a class="nav-link hide-mobile-block" href="http://ednc.org/" target="_blank"><img class="hide-mobile-block" id="powerby" src="images/powerby.png" alt="" style="width:90px;position:absolute;"></a></div>
+          <ul class="nav navbar-nav">
+            <div>
+              <li class="menu-mini-flex">
+                <a class="show-mobile-block nav-link" href="http://ednc.org/" >Powered by EducationNC</a>
+                <img class="show-mobile-block" src="images/ednc_logo.png" alt="" style="width:20px;height:20px;" >
+              </li>
             </div>
-          </div>
-    </section>
 
-    <!-- END HEADER SECTION -->
-
-
-
-    <section class="subscribe hide-mobile-block">
-        <div class="section_overlay">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10 col-md-offset-1">
-
-                        <!-- Start Subscribe Section Title -->
-                        <div class="section_title">
-                            <h2>JOIN THE CONVERSATION</h2>
-                            <p>Sign up to join the Reach NC Voices community.</p>
-                        </div>
-                        <!-- End Subscribe Section Title -->
-                    </div>
-                </div>
-            </div>
-          </div>
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3">
-
-
-                      <iframe id="embed73848" src="//app.cityzen.io/display/?id=7020&embedId=73848" width="100%" height="425" frameborder="0" scrolling="yes"></iframe><script type="text/javascript">(function (c, i, t, y, z, e, n, x) { x = c.createElement(y), n = c.getElementsByTagName(y)[0]; x.async = 1; x.src = t; n.parentNode.insertBefore(x, n); })(document, window, "//app.cityzen.io/Link?embedId=73848", "script");</script>
+            <li data-menuanchor="Home"><a class="nav-link" href="#Home">Home</a></li>
+          	<li data-menuanchor="Who"><a class="nav-link" href="#Who">Who we are</a></li>
+          	<li data-menuanchor="Process"><a class="nav-link" href="#Process">Our process</a></li>
+            <li data-menuanchor="People"><a class="nav-link" href="#Quotes">What People are Saying</a></li>
+            <li data-menuanchor="Share"><a class="nav-link" href="#Share">Share your voice</a></li>
+            <li data-menuanchor="Join"><a class="nav-link" href="#Join">Join the conversation</a></li>
+            <li data-menuanchor="Partners"><a class="nav-link" href="#Partners">Our partners</a></li>
+            <li data-menuanchor="Partners"><a class="nav-link" href="https://blog.reachncvoices.org/" target="_blank">Blog</a></li>
 
 
 
-                        </div>
+              <div class="ribbon-box">
+                 <div class="ribbon"><span>BETA</span></div>
+              </div>
+
+              <!-- <a class="nav-link show-mobile-block" href="http://ednc.org/" target="_blank"><img id="powerby" class="show-mobile-block" src="images/ednc_logo.png" alt="" style="width:200px;"></a> -->
+            </li>
+          </ul>
+        <!-- </div> -->
+      </div>
+      </nav>
 
 
-                    </div>
-                </div>
-            </div>
+<div id="fullpage">
+    <div class="container-fluid" style="padding:0;">
+
+  <div id="section0" class="section">
+    <div class="row flex-center">
+      <div class="col-lg-8">
+        <img id="reach-banner" src="images/reach-banner-02.png" alt="">
+        <h3 class="subtitle">North Carolina's 21st Century Town Hall</h3>
+      </div>
+    </div>
+    <div class="row flex-center">
+      <div class="col-lg-12">
+
+        <div class="arrow bounce">
+          <p style="color:white;">Sign up</p>
+          <a class="fa fa-arrow-down fa-2x" href="#"></a>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
 
 
 
-    <section class="copyright">
-        <h2></h2>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="copy_right_text">
-                    <!-- COPYRIGHT TEXT -->
-                        <p>Contact lcarbonell@ednc.org with questions.</p>
-                    </div>
 
-                </div>
+<div class="section">
 
-            </div>
+
+<div class="container-fluid" style="max-width:1200px;">
+  <div class="row">
+    <div class="col-lg-12">
+      <h1>What is Reach NC Voices?</h1>
+    </div>
+    <div class="col-lg-12 flex-center">
+      <p class="big-slide-body">Reach is a initiative of EducationNC working to bring unheard voices back to the public discourse. Through direct conversation, we want to show people they matter, so they will be empowered to civically engage. Too many North Carolinians are not having their stories heard. And now we want to use our technology to listen.</p>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div class="section" style="color:white!important;">
+  <div class="container">
+  <div class="row">
+    <div class="col-lg-12 flex-center">
+      <h1>Our Process</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-6 col-md-6">
+      <div class="col-lg-12 flex-center">
+        <i class="fa fa-question-circle" aria-hidden="true"></i>
+      </div>
+      <div class="col-lg-12">
+          <p>It starts with a question. <span class="p-sub">Maybe it's about how much principals should be paid, or when the class day should start.</span></p>
+      </div>
+    </div>
+      <div class="col-lg-6 col-md-6">
+        <div class="row">
+          <div class="col-lg-12 flex-center">
+            <i class="fa fa-comments-o" aria-hidden="true"></i>
+          </div>
+          <div class="col-lg-12">
+            <p>We take that question to the community. <span class="p-sub">We meet you where you are — inbox, phone, or in your community — and invite you to share your stories.</p>
+          </div>
         </div>
-    </section>
-    <!-- END FOOTER -->
+      </div>
+  </div>
+
+  <div class="row" style="margin-top:20px;">
+  <div class="col-lg-6 col-md-6">
+    <div class="row">
+      <div class="col-lg-12 flex-center">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <i class="fa fa-bullhorn" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div class="col-lg-12">
+        <p>Analyze the responses and take action. <span class="p-sub">This might mean writing a story, sending a report to a policymaker, or fostering continued conversation.</span></p>
+    </div>
+  </div>
+  <div class="col-lg-6 col-md-6">
+    <div class="row">
+      <div class="col-lg-12 flex-center">
+        <i class="fa fa-handshake-o" aria-hidden="true"></i>
+      </div>
+      <div class="col-lg-12">
+        <p>Then — always — return to you. <span class="p-sub">Having a conversation with Reach means we will always provide you with helpful information.</span></p>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <!-- <div class="row" style="margin-top:40px;">
+    <div class="col-lg-12 flex-center">
+      <p style="font-weight:100;text-align:left;">The details of this cycle are constantly changing. As Reach NC Voices evolves, we're listening not only to your experiences with education, but your experiences with us. Let us know how we can help you — it's what we're here for.</p>
+    </div>
+  </div> -->
+  </div>
+
+</div>
+
+<div class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1>Here's what people are saying</h1>
+        <p class="lil-attribute" style="text-align:center;">Scroll <i class="fa fa-arrows-h" aria-hidden="true"></i>
+ to read more quotes</p>
+      </div>
+    </div>
+    <div class="row responsive quote-card">
+      <div>
+        <h4 class="lil-question">In one sentence, describe what Durham means to you.</h4>
+        <h4 class="lil-answer">&ldquo;Durham to me means gritty, urban, progressive, growing & becoming more prosperous, while struggling to become who we say we are in the midst of huge inequalities&rdquo;</h4>
+        <p class="lil-attribute">-Mother from Durham</p>
+      </div>
+      <div>
+        <h4 class="lil-question">What local issues do you want to hear more about?</h4>
+        <h4 class="lil-answer">&ldquo;I do not think we see enough local honest news. We also need some good stories, not hear only the bad. A station should not only be honest but also be fair to everyone. I do not always see that.&rdquo;</h4>
+        <p class="lil-attribute">-Edgecombe resident</p>
+      </div>
+      <div>
+        <h4 class="lil-question">What role do you think North Carolina community colleges will play in the next 20 years?</h4>
+        <h4 class="lil-answer">&ldquo;With the cost of 4 year college degrees getting more and more expensive, community college is an alternative for those who may not need a 4 year degree...I’m concerned also that 2 year schools have a reputation as being a less desirable option.&rdquo;</h4>
+         <!-- (skilled trades) or may need a less expensive alternative for the 1st 2 years of the 4 year degree. Community need to make sure their programs are up to the task.  -->
+        <p class="lil-attribute">-Father from Asheville</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+
+    <h1>Share your voice</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div id="reach-poll">
+            <iframe id="embed67361" src="//app.cityzen.io/display/?projId=2079&embedId=67361" width="100%" height="425" frameborder="0" scrolling="yes"></iframe>
+            <script>(function (c, i, t, y, z, e, n, x) { x = c.createElement(y), n = c.getElementsByTagName(y)[0]; x.async = 1; x.src = t; n.parentNode.insertBefore(x, n); i.czen = { pub: z, dom: e };})(document, window, 'http://app.cityzen.io/static/pub.js', 'script', 1114, 3);</script>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+<div class="section">
+
+    <h1>Connect with us</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h4 class="connect-subhead">By Text</h4>
+          <p class="connect-body">We’ll send you occasional texts with localized news updates, thought-provoking and invitations to share your perspective. (You’ll get up to 4 messages/month, text STOP to quit anytime or HELP for more info. Standard msg rates apply).</p>
+          <iframe id="embed79515" src="//app.cityzen.io/display/?projId=2177&embedId=79515" width="100%" height="425" frameborder="0" scrolling="yes"></iframe><script type="text/javascript">(function (c, i, t, y, z, e, n, x) { x = c.createElement(y), n = c.getElementsByTagName(y)[0]; x.async = 1; x.src = t; n.parentNode.insertBefore(x, n); })(document, window, "//app.cityzen.io/Link?embedId=79515", "script");</script>
+        </div>
+        <div class="col-lg-6">
+          <h4 class="connect-subhead">By Email</h4>
+          <p class="connect-body">We'll send you a digest of the latest education news, and highlights from conversations we’re having with North Carolinans about education and our shared future as a state.</p>
+          <iframe id="embed56565" src="//app.cityzen.io/display/?projId=2176&embedId=56565" width="100%" height="425" frameborder="0" scrolling="yes"></iframe><script type="text/javascript">(function (c, i, t, y, z, e, n, x) { x = c.createElement(y), n = c.getElementsByTagName(y)[0]; x.async = 1; x.src = t; n.parentNode.insertBefore(x, n); })(document, window, "//app.cityzen.io/Link?embedId=56565", "script");</script>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 flex-center" style="margin:20px;">
+
+        <a href="http://m.me/educationnc" target="_blank" class="btn btn-info btn-fb-msg" style="    color: #fff;
+    background-color: #1d8efe;
+    border-color: #d8d8d8;font-size: 20px;border:1px solid #d8d8d8;"><img src="https://3e9eq82l8dmn2cmrkf23oogn-wpengine.netdna-ssl.com/wp-content/uploads/2017/04/facebook-messanger-icon-new.png" alt="facebook" style="  color: #FFF;
+    text-transform: none;
+
+    padding: 10px 16px;
+    border-radius: 0;
+    height: 50px;
+    padding-left: 0;
+    padding-right: 13px;"><span>Message us<span></a>
+    </div>
+      </div>
+      <!-- <div class="row">
+        <div class="col-lg-12 flex-center">
+          <p class="join-body">Join our community of North Carolinians who are sharing their thoughts on issues that matter to our state and gain a direct line to decision makers by sharing your stories, hopes, dreams, and aspirations.</p>
+        </div>
+        <div class="col-lg-12">
+          <div id="reach-poll">
+            <iframe id="embed73848" src="//app.cityzen.io/display/?id=7020&embedId=73848" width="100%" height="425" frameborder="0" scrolling="yes"></iframe><script type="text/javascript">(function (c, i, t, y, z, e, n, x) { x = c.createElement(y), n = c.getElementsByTagName(y)[0]; x.async = 1; x.src = t; n.parentNode.insertBefore(x, n); })(document, window, "//app.cityzen.io/Link?embedId=73848", "script");</script>
+          </div>
+        </div>
+      </div> -->
+    </div>
+
+</div>
+
+<div class="section">
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+        <h1>Our Partners</h1>
+
+    </div>
+
+    </div>
+
+    <div id="mobile-partner-list" class="row">
+      <!-- <li>Belk Foundation</li> -->
+      <li>BlueCross BlueShield of North Carolina</li>
+      <!-- <li>Burroughs Wellcome Fund</li>
+      <li>O2 Energies</li> -->
+      <li>James P. Duke Endowment</li>
+      <li>Duke Energy</li>
+      <!-- <li>John William Pope Foundation</li>
+      <li>Mebane Foundation</li>
+      <li>The William R. Kenan, Jr. Charitable Trust</li>
+      <li>Park Foundation</li>
+      <li>SAS</li>
+      <li>Viacom</li>
+      <li>Wells Fargo</li> -->
+    </div>
+
+<div id="logo-list">
+  <div class="container">
+    <div class="row flex-center">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-2"><img src="images/logos/BCBS.png" alt="" width="150"></div>
+      <div class="col-lg-2"><img src="images/logos/d-endow.png" alt="" width="150"></div>
+      <div class="col-lg-2"><img src="images/logos/d-energy.png" alt="" width="150"></div>
+      <div class="col-lg-2"><img src="images/logos/nii.jpg" alt="" width="150"></div>
+
+      <div class="col-lg-2"></div>
+    </div>
+  </div>
+
+
+    <!-- <div class="row flex-center logo-row">
+      <div class="col-lg-2"><img src="images/logos/BCBS.png" alt="" width="150"></div>
+      <div class="col-lg-2"><img src="images/logos/belk.png" alt="" width="150"></div>
+
+      <div class="col-lg-2"><img src="images/logos/d-endow.png" alt="" width="150"></div>
+      <div class="col-lg-2"><img src="images/logos/d-energy.png" alt="" width="150"></div>
+      <div class="col-lg-2"><img src="images/logos/jwpope.png" alt="" width="150"></div>
+      <div class="col-lg-2"><img src="images/logos/zsmith.png" alt="" width="150"></div>
+
+    </div>
+
+    <div class="row flex-center logo-row">
+
+      <div class="col-lg-2"><img src="images/logos/mebane.png" alt="" width="150"></div>
+      <div class="col-lg-2"><img src="images/logos/william-trust.png" alt="" width="150"></div>
+
+        <div class="col-lg-2"><img src="images/logos/park.png" alt="" width="150"></div>
+        <div class="col-lg-2"><img src="images/logos/sas.png" alt="" width="150"></div>
+        <div class="col-lg-2"><img src="images/logos/viacom.png" alt="" width="150"></div>
+
+
+      </div>
+
+      <div class="row flex-center logo-row">
+        <div class="col-lg-2"><img src="images/logos/o2.png" alt="" width="100"></div>
+
+        <div class="col-lg-2"><img src="images/logos/burr.png" alt="" width="100"></div>
+        <div class="col-lg-2"><img src="images/logos/wells-fargo.png" alt="" width="100"></div>
+      </div>
+    </div> -->
+</div>
+
+
+
+
+</div>
+
+</div>
+</div> <!-- fullpage -->
+
+
+</div><!--.container-fluid-->
+
+
+
+</div>
 
 
 
 
     <script src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+
+<script>
+$(document).ready(function() {
+  $('#fullpage').fullpage({
+  				anchors: ['Home', 'Who', 'Process', 'People', 'Share', 'Join', 'Partners'],
+          sectionsColor: ['#DEE4F2', '#769BBE', '#5681B4', '#4C6F96', '#43688F', '#505E87', '#25366A'],
+          // sectionsColor: ['#DAC500', '#1BBC9B', '#1d2a56', '#059EBE', '#1BBC9B', '#1BBC9B', '#1C2957'],
+  				menu: '#menu',
+  				navigation: false,
+  				responsiveWidth: 1100,
+          autoScrolling: false
+  			});
+
+
+        $('.responsive').slick({
+          dots: true,
+          infinite: false,
+          speed: 300,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+
+        });
+      });
+
+
+
+  
+
+</script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 
 
 
