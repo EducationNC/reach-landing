@@ -35,8 +35,7 @@
 
 <body>
 
-
-  <nav class="navbar navbar-toggleable-md navbar-dark bg-faded" style="margin-top:0;">
+  <nav class="nav-down navbar navbar-toggleable-md navbar-dark bg-faded" style="margin-top:0;">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"><i class="fa fa-plus-square-o" aria-hidden="true"></i> menu</span></button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01" style="padding:0;">
         <!-- <div class="container-fluid" style="padding:0;"> -->
@@ -56,7 +55,7 @@
             <li data-menuanchor="Share"><a class="nav-link" href="#Share">Share your voice</a></li>
             <li data-menuanchor="Join"><a class="nav-link" href="#Join">Join the conversation</a></li>
             <li data-menuanchor="Partners"><a class="nav-link" href="#Partners">Our partners</a></li>
-            <li data-menuanchor="Partners"><a class="nav-link" href="https://blog.reachncvoices.org/">Blog</a></li>
+            <li data-menuanchor="Partners"><a class="nav-link" href="https://blog.reachncvoices.org/" target="_blank">Blog</a></li>
 
 
 
@@ -70,6 +69,7 @@
         <!-- </div> -->
       </div>
       </nav>
+
 
 <div id="fullpage">
     <div class="container-fluid" style="padding:0;">
@@ -194,7 +194,8 @@
       </div>
       <div>
         <h4 class="lil-question">What role do you think North Carolina community colleges will play in the next 20 years?</h4>
-        <h4 class="lil-answer">&ldquo;With the cost of 4 year college degrees getting more and more expensive, community college is an alternative for those who may not need a 4 year degree (skilled trades) or may need a less expensive alternative for the 1st 2 years of the 4 year degree. Community need to make sure their programs are up to the task. I’m concerned also that 2 year schools have a reputation as being a less desirable option.&rdquo;</h4>
+        <h4 class="lil-answer">&ldquo;With the cost of 4 year college degrees getting more and more expensive, community college is an alternative for those who may not need a 4 year degree...I’m concerned also that 2 year schools have a reputation as being a less desirable option.&rdquo;</h4>
+         <!-- (skilled trades) or may need a less expensive alternative for the 1st 2 years of the 4 year degree. Community need to make sure their programs are up to the task.  -->
         <p class="lil-attribute">-Father from Asheville</p>
 
       </div>
@@ -385,6 +386,49 @@ $(document).ready(function() {
 
         });
 
+
+
+
+      // Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        console.log('scroll down')
+        $('nav').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        console.log('scroll up')
+        if(st + $(window).height() < $(document).height()) {
+            $('nav').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+
+    lastScrollTop = st;
+}
       });
 
 </script>

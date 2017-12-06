@@ -586,7 +586,19 @@ a.fb-message-blue:focus {
   padding: 10px 7px;
   float: left;
 }
+.nav-down, .nav-up {
+    /*background: #f5b335;*/
+    /*height: 40px;*/
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+}
 
+.nav-up {
+    top: -70px;
+
+}
 
 
 @media (max-width:830px){
