@@ -35,7 +35,7 @@ p {
 }
 
 .connect-subhead{
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
     /*color: #25366A;*/
     color:white;
     font-weight: 700;
@@ -85,7 +85,8 @@ p {
 .navbar .navbar-nav .nav-link {
   color: white;
   border-radius: .25rem;
-  margin: 0 0.25em;
+  /*margin: 0 0.25em;*/
+  margin:0;
   text-transform:uppercase;
   font-weight:700;
 }
@@ -303,8 +304,8 @@ padding:0 0 0 0;
 h1{
 color: white;
 font-weight: 900;
-letter-spacing: 13px;
-text-transform: uppercase;
+letter-spacing: 2px;
+/*text-transform: uppercase;*/
 }
 h3.subtitle{
 color: white;
@@ -386,7 +387,7 @@ border:none!important;
 border-radius:0!important;
 }
 #powerby{
-width: 100px!important;
+width: 90px;
 
 }
 #powerby-wrap{
@@ -482,6 +483,58 @@ ul.nav.navbar-nav{
 }
 
 
+/*ribbon*/
+.ribbon-box {
+  width: 20px;
+  height: 20px;
+  position: relative;
+
+}
+.ribbon {
+  position: absolute;
+  right: -24px; top: -5px;
+  z-index: 1;
+  overflow: hidden;
+  width: 75px; height: 75px;
+  text-align: right;
+}
+.ribbon span {
+  font-size: 10px;
+  font-weight: bold;
+  color: #FFF;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 20px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  width: 100px;
+  display: block;
+  background: #79A70A;
+  background: linear-gradient(#9BC90D 0%, #79A70A 100%);
+  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 19px; right: -21px;
+}
+.ribbon span::before {
+  content: "";
+  position: absolute; left: 0px; top: 100%;
+  z-index: -1;
+  border-left: 3px solid #79A70A;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #79A70A;
+}
+.ribbon span::after {
+  content: "";
+  position: absolute; right: 0px; top: 100%;
+  z-index: -1;
+  border-left: 3px solid transparent;
+  border-right: 3px solid #79A70A;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #79A70A;
+}
+
+
 
 /*** FACEBOOK BUTTON ***/
 /*---------------------------
@@ -543,6 +596,13 @@ a.fb-message-blue:focus {
 }
 
 @media (max-width: 768px) {
+  .ribbon-box{
+    display:none;
+  }
+  ul.nav.navbar-nav{
+    height:auto;
+    padding:20px!important;
+  }
   button.navbar-toggler{
     color: white;
     display: inline-block;
