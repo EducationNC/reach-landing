@@ -393,7 +393,6 @@ width: 90px;
 #powerby-wrap{
 background: none!important;
 border: none!important;
-float: right!important;
 }
 
 i.fa{
@@ -492,7 +491,7 @@ ul.nav.navbar-nav{
 }
 .ribbon {
   position: absolute;
-  right: -24px; top: -5px;
+  right: -83px; top: -5px;
   z-index: 1;
   overflow: hidden;
   width: 75px; height: 75px;
@@ -534,6 +533,19 @@ ul.nav.navbar-nav{
   border-top: 3px solid #79A70A;
 }
 
+/*.nav.navbar-nav li{
+  background:#f7f7f9;
+
+  height:50px;
+  padding-bottom: 10px;
+}
+
+.nav.navbar-nav .nav-link{
+  color:black;
+}
+a.nav-link{
+  padding-right:0;
+}*/
 
 
 /*** FACEBOOK BUTTON ***/
@@ -586,9 +598,7 @@ a.fb-message-blue:focus {
   padding: 10px 7px;
   float: left;
 }
-.nav-down, .nav-up {
-    /*background: #f5b335;*/
-    /*height: 40px;*/
+/*.nav-down, .nav-up {
     position: fixed;
     top: 0;
     transition: top 0.2s ease-in-out;
@@ -598,7 +608,7 @@ a.fb-message-blue:focus {
 .nav-up {
     top: -70px;
 
-}
+}*/
 
 
 @media (max-width:830px){

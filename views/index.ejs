@@ -39,6 +39,8 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"><i class="fa fa-plus-square-o" aria-hidden="true"></i> menu</span></button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01" style="padding:0;">
         <!-- <div class="container-fluid" style="padding:0;"> -->
+        <div id="powerby-wrap">
+          <a class="nav-link hide-mobile-block" href="http://ednc.org/" target="_blank"><img class="hide-mobile-block" id="powerby" src="images/powerby.png" alt="" style="width:90px;position:absolute;"></a></div>
           <ul class="nav navbar-nav">
             <div>
               <li class="menu-mini-flex">
@@ -46,8 +48,7 @@
                 <img class="show-mobile-block" src="images/ednc_logo.png" alt="" style="width:20px;height:20px;" >
               </li>
             </div>
-            <li id="powerby-wrap">
-              <a class="nav-link hide-mobile-block" href="http://ednc.org/" target="_blank"><img class="hide-mobile-block" id="powerby" src="images/powerby.png" alt="" style="width:90px;"></a></li>
+
             <li data-menuanchor="Home"><a class="nav-link" href="#Home">Home</a></li>
           	<li data-menuanchor="Who"><a class="nav-link" href="#Who">Who we are</a></li>
           	<li data-menuanchor="Process"><a class="nav-link" href="#Process">Our process</a></li>
@@ -385,51 +386,11 @@ $(document).ready(function() {
             // instead of a settings object
 
         });
-
-
-
-
-      // Hide Header on on scroll down
-var didScroll;
-var lastScrollTop = 0;
-var delta = 5;
-var navbarHeight = $('header').outerHeight();
-
-$(window).scroll(function(event){
-    didScroll = true;
-});
-
-setInterval(function() {
-    if (didScroll) {
-        hasScrolled();
-        didScroll = false;
-    }
-}, 250);
-
-function hasScrolled() {
-    var st = $(this).scrollTop();
-
-    // Make sure they scroll more than delta
-    if(Math.abs(lastScrollTop - st) <= delta)
-        return;
-
-    // If they scrolled down and are past the navbar, add class .nav-up.
-    // This is necessary so you never see what is "behind" the navbar.
-    if (st > lastScrollTop && st > navbarHeight){
-        // Scroll Down
-        console.log('scroll down')
-        $('nav').removeClass('nav-down').addClass('nav-up');
-    } else {
-        // Scroll Up
-        console.log('scroll up')
-        if(st + $(window).height() < $(document).height()) {
-            $('nav').removeClass('nav-up').addClass('nav-down');
-        }
-    }
-
-    lastScrollTop = st;
-}
       });
+
+
+
+  
 
 </script>
 
