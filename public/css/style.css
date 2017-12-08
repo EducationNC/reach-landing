@@ -490,15 +490,23 @@ ul.nav.navbar-nav{
 
 }
 .ribbon {
-  position: absolute;
+  /*position: absolute;
   right: -83px; top: -5px;
   z-index: 1;
   overflow: hidden;
   width: 75px; height: 75px;
-  text-align: right;
+  text-align: right;*/
+  position: absolute;
+right: -114px;
+top: -5px;
+z-index: 1;
+overflow: hidden;
+width: 96px;
+height: 96px;
+text-align: right;
 }
 .ribbon span {
-  font-size: 10px;
+  /*font-size: 10px;
   font-weight: bold;
   color: #FFF;
   text-transform: uppercase;
@@ -512,7 +520,23 @@ ul.nav.navbar-nav{
   background: linear-gradient(#9BC90D 0%, #79A70A 100%);
   box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
   position: absolute;
-  top: 19px; right: -21px;
+  top: 19px; right: -21px;*/
+  font-size: 16px;
+    font-weight: bold;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 34px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    width: 165px;
+    display: block;
+    background: #79A70A;
+    background: linear-gradient(#9BC90D 0%, #79A70A 100%);
+    box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 14px;
+    right: -38px;
 }
 .ribbon span::before {
   content: "";
