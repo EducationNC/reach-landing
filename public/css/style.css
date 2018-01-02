@@ -729,3 +729,10 @@ a.fb-message-blue:focus {
     font-style: italic;
     }
 }
+
+#reach-poll p{
+  color: white;
+text-align: left;
+font-weight: 400;
+font-size: 18pt;
+}
