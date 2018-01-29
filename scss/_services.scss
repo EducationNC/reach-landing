@@ -1,0 +1,44 @@
+// Styling for the services section
+.service-heading {
+  margin: 15px 0;
+  text-transform: none;
+  height:2em;
+}
+
+.conversation-descr{
+  height: 10em;
+}
+
+.feed{
+  // text-align:left;
+  max-height:500px;
+  overflow-y:scroll;
+  width:100%;
+  background-color:$gray-100;
+  padding:1em;
+  margin-top:2em;
+  @include body-font;
+  .feed__question{
+    font-size:1.1em;
+    color:$gray-700;
+    font-style:italic;
+    font-weight:300;
+  }
+  .feed__quote_box{
+    @include body-font;
+    margin-top:2em;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    padding:1em;
+    background-color:$white;
+    .feed__quote{
+      font-size:.9em;
+      font-weight:300;
+    }
+    .feed__attrib{
+      font-size:.9em;
+      margin-left:2em;
+      font-weight:300;
+    }
+  }
+  
+}
