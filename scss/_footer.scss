@@ -2,6 +2,7 @@
 footer {
   padding: 25px 0;
   text-align: center;
+  background-color:$gray-400;
   span.copyright {
     font-size: 90%;
     line-height: 40px;
@@ -15,6 +16,21 @@ footer {
     text-transform: none;
     @include heading-font;
   }
+}
+#ednc_title{
+  color:#741C4E;
+  font-weight:400;
+  font-size:1.2em;
+  @include heading-font;
+}
+.footer-menu{
+  list-style-type:none;
+  text-align:left;
+  color:$black;
+  a{
+    color:$black;
+  }
+  
 }
 
 ul.social-buttons {
