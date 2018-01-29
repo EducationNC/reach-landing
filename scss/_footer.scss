@@ -1,0 +1,59 @@
+// Styling for the footer
+footer {
+  padding: 25px 0;
+  text-align: center;
+  background-color:$gray-400;
+  span.copyright {
+    font-size: 90%;
+    line-height: 40px;
+    text-transform: none;
+    @include heading-font;
+  }
+  ul.quicklinks {
+    font-size: 90%;
+    line-height: 40px;
+    margin-bottom: 0;
+    text-transform: none;
+    @include heading-font;
+  }
+}
+#ednc_title{
+  color:#741C4E;
+  font-weight:400;
+  font-size:1.2em;
+  @include heading-font;
+}
+.footer-menu{
+  list-style-type:none;
+  text-align:left;
+  color:$black;
+  a{
+    color:$black;
+  }
+  
+}
+
+ul.social-buttons {
+  margin-bottom: 0;
+  li {
+    a {
+      font-size: 20px;
+      line-height: 40px;
+      display: block;
+      width: 40px;
+      height: 40px;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+      color: white;
+      border-radius: 100%;
+      outline: none;
+      background-color: $gray-900;
+      &:active,
+      &:focus,
+      &:hover {
+        background-color: $primary;
+      }
+    }
+  }
+}
